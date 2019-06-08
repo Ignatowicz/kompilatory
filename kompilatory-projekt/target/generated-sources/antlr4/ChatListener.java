@@ -7,93 +7,223 @@ import org.antlr.v4.runtime.tree.ParseTreeListener;
  */
 public interface ChatListener extends ParseTreeListener {
 	/**
-	 * Enter a parse tree produced by {@link ChatParser#chat}.
+	 * Enter a parse tree produced by {@link ChatParser#program}.
 	 * @param ctx the parse tree
 	 */
-	void enterChat(ChatParser.ChatContext ctx);
+	void enterProgram(ChatParser.ProgramContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link ChatParser#chat}.
+	 * Exit a parse tree produced by {@link ChatParser#program}.
 	 * @param ctx the parse tree
 	 */
-	void exitChat(ChatParser.ChatContext ctx);
+	void exitProgram(ChatParser.ProgramContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link ChatParser#line}.
+	 * Enter a parse tree produced by {@link ChatParser#code}.
 	 * @param ctx the parse tree
 	 */
-	void enterLine(ChatParser.LineContext ctx);
+	void enterCode(ChatParser.CodeContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link ChatParser#line}.
+	 * Exit a parse tree produced by {@link ChatParser#code}.
 	 * @param ctx the parse tree
 	 */
-	void exitLine(ChatParser.LineContext ctx);
+	void exitCode(ChatParser.CodeContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link ChatParser#message}.
+	 * Enter a parse tree produced by {@link ChatParser#expression}.
 	 * @param ctx the parse tree
 	 */
-	void enterMessage(ChatParser.MessageContext ctx);
+	void enterExpression(ChatParser.ExpressionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link ChatParser#message}.
+	 * Exit a parse tree produced by {@link ChatParser#expression}.
 	 * @param ctx the parse tree
 	 */
-	void exitMessage(ChatParser.MessageContext ctx);
+	void exitExpression(ChatParser.ExpressionContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link ChatParser#name}.
+	 * Enter a parse tree produced by {@link ChatParser#flowExpression}.
 	 * @param ctx the parse tree
 	 */
-	void enterName(ChatParser.NameContext ctx);
+	void enterFlowExpression(ChatParser.FlowExpressionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link ChatParser#name}.
+	 * Exit a parse tree produced by {@link ChatParser#flowExpression}.
 	 * @param ctx the parse tree
 	 */
-	void exitName(ChatParser.NameContext ctx);
+	void exitFlowExpression(ChatParser.FlowExpressionContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link ChatParser#command}.
+	 * Enter a parse tree produced by {@link ChatParser#printExpression}.
 	 * @param ctx the parse tree
 	 */
-	void enterCommand(ChatParser.CommandContext ctx);
+	void enterPrintExpression(ChatParser.PrintExpressionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link ChatParser#command}.
+	 * Exit a parse tree produced by {@link ChatParser#printExpression}.
 	 * @param ctx the parse tree
 	 */
-	void exitCommand(ChatParser.CommandContext ctx);
+	void exitPrintExpression(ChatParser.PrintExpressionContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link ChatParser#emoticon}.
+	 * Enter a parse tree produced by {@link ChatParser#startFunction}.
 	 * @param ctx the parse tree
 	 */
-	void enterEmoticon(ChatParser.EmoticonContext ctx);
+	void enterStartFunction(ChatParser.StartFunctionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link ChatParser#emoticon}.
+	 * Exit a parse tree produced by {@link ChatParser#startFunction}.
 	 * @param ctx the parse tree
 	 */
-	void exitEmoticon(ChatParser.EmoticonContext ctx);
+	void exitStartFunction(ChatParser.StartFunctionContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link ChatParser#link}.
+	 * Enter a parse tree produced by {@link ChatParser#bool_val}.
 	 * @param ctx the parse tree
 	 */
-	void enterLink(ChatParser.LinkContext ctx);
+	void enterBool_val(ChatParser.Bool_valContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link ChatParser#link}.
+	 * Exit a parse tree produced by {@link ChatParser#bool_val}.
 	 * @param ctx the parse tree
 	 */
-	void exitLink(ChatParser.LinkContext ctx);
+	void exitBool_val(ChatParser.Bool_valContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link ChatParser#color}.
+	 * Enter a parse tree produced by {@link ChatParser#type}.
 	 * @param ctx the parse tree
 	 */
-	void enterColor(ChatParser.ColorContext ctx);
+	void enterType(ChatParser.TypeContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link ChatParser#color}.
+	 * Exit a parse tree produced by {@link ChatParser#type}.
 	 * @param ctx the parse tree
 	 */
-	void exitColor(ChatParser.ColorContext ctx);
+	void exitType(ChatParser.TypeContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link ChatParser#mention}.
+	 * Enter a parse tree produced by {@link ChatParser#value}.
 	 * @param ctx the parse tree
 	 */
-	void enterMention(ChatParser.MentionContext ctx);
+	void enterValue(ChatParser.ValueContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link ChatParser#mention}.
+	 * Exit a parse tree produced by {@link ChatParser#value}.
 	 * @param ctx the parse tree
 	 */
-	void exitMention(ChatParser.MentionContext ctx);
+	void exitValue(ChatParser.ValueContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ChatParser#varDeclaration}.
+	 * @param ctx the parse tree
+	 */
+	void enterVarDeclaration(ChatParser.VarDeclarationContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ChatParser#varDeclaration}.
+	 * @param ctx the parse tree
+	 */
+	void exitVarDeclaration(ChatParser.VarDeclarationContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ChatParser#varExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterVarExpression(ChatParser.VarExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ChatParser#varExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitVarExpression(ChatParser.VarExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ChatParser#factor}.
+	 * @param ctx the parse tree
+	 */
+	void enterFactor(ChatParser.FactorContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ChatParser#factor}.
+	 * @param ctx the parse tree
+	 */
+	void exitFactor(ChatParser.FactorContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ChatParser#arithmeticExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterArithmeticExpression(ChatParser.ArithmeticExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ChatParser#arithmeticExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitArithmeticExpression(ChatParser.ArithmeticExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ChatParser#returnn}.
+	 * @param ctx the parse tree
+	 */
+	void enterReturnn(ChatParser.ReturnnContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ChatParser#returnn}.
+	 * @param ctx the parse tree
+	 */
+	void exitReturnn(ChatParser.ReturnnContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ChatParser#function}.
+	 * @param ctx the parse tree
+	 */
+	void enterFunction(ChatParser.FunctionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ChatParser#function}.
+	 * @param ctx the parse tree
+	 */
+	void exitFunction(ChatParser.FunctionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ChatParser#typedArgList}.
+	 * @param ctx the parse tree
+	 */
+	void enterTypedArgList(ChatParser.TypedArgListContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ChatParser#typedArgList}.
+	 * @param ctx the parse tree
+	 */
+	void exitTypedArgList(ChatParser.TypedArgListContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ChatParser#argList}.
+	 * @param ctx the parse tree
+	 */
+	void enterArgList(ChatParser.ArgListContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ChatParser#argList}.
+	 * @param ctx the parse tree
+	 */
+	void exitArgList(ChatParser.ArgListContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ChatParser#functionCall}.
+	 * @param ctx the parse tree
+	 */
+	void enterFunctionCall(ChatParser.FunctionCallContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ChatParser#functionCall}.
+	 * @param ctx the parse tree
+	 */
+	void exitFunctionCall(ChatParser.FunctionCallContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ChatParser#logicalExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterLogicalExpression(ChatParser.LogicalExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ChatParser#logicalExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitLogicalExpression(ChatParser.LogicalExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ChatParser#compareExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterCompareExpression(ChatParser.CompareExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ChatParser#compareExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitCompareExpression(ChatParser.CompareExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ChatParser#conditionalExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterConditionalExpression(ChatParser.ConditionalExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ChatParser#conditionalExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitConditionalExpression(ChatParser.ConditionalExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ChatParser#untilExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterUntilExpression(ChatParser.UntilExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ChatParser#untilExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitUntilExpression(ChatParser.UntilExpressionContext ctx);
 }
