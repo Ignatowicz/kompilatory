@@ -9,7 +9,7 @@ import java.util.Iterator;
 import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
-public class ChatParser extends Parser {
+public class EasyLangParser extends Parser {
 	static { RuntimeMetaData.checkVersion("4.7", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
@@ -94,7 +94,7 @@ public class ChatParser extends Parser {
 	@Override
 	public ATN getATN() { return _ATN; }
 
-	public ChatParser(TokenStream input) {
+	public EasyLangParser(TokenStream input) {
 		super(input);
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
@@ -105,26 +105,26 @@ public class ChatParser extends Parser {
 		public ProgramContext program() {
 			return getRuleContext(ProgramContext.class,0);
 		}
-		public TerminalNode T_COMMENT() { return getToken(ChatParser.T_COMMENT, 0); }
+		public TerminalNode T_COMMENT() { return getToken(EasyLangParser.T_COMMENT, 0); }
 		public StartFunctionContext startFunction() {
 			return getRuleContext(StartFunctionContext.class,0);
 		}
-		public TerminalNode EOF() { return getToken(ChatParser.EOF, 0); }
+		public TerminalNode EOF() { return getToken(EasyLangParser.EOF, 0); }
 		public ProgramContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_program; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).enterProgram(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).enterProgram(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).exitProgram(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).exitProgram(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ChatVisitor ) return ((ChatVisitor<? extends T>)visitor).visitProgram(this);
+			if ( visitor instanceof EasyLangVisitor ) return ((EasyLangVisitor<? extends T>)visitor).visitProgram(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -182,29 +182,29 @@ public class ChatParser extends Parser {
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
-		public TerminalNode T_END_LINE() { return getToken(ChatParser.T_END_LINE, 0); }
+		public TerminalNode T_END_LINE() { return getToken(EasyLangParser.T_END_LINE, 0); }
 		public CodeContext code() {
 			return getRuleContext(CodeContext.class,0);
 		}
 		public FlowExpressionContext flowExpression() {
 			return getRuleContext(FlowExpressionContext.class,0);
 		}
-		public TerminalNode T_COMMENT() { return getToken(ChatParser.T_COMMENT, 0); }
+		public TerminalNode T_COMMENT() { return getToken(EasyLangParser.T_COMMENT, 0); }
 		public CodeContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_code; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).enterCode(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).enterCode(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).exitCode(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).exitCode(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ChatVisitor ) return ((ChatVisitor<? extends T>)visitor).visitCode(this);
+			if ( visitor instanceof EasyLangVisitor ) return ((EasyLangVisitor<? extends T>)visitor).visitCode(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -293,15 +293,15 @@ public class ChatParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_expression; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).enterExpression(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).enterExpression(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).exitExpression(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).exitExpression(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ChatVisitor ) return ((ChatVisitor<? extends T>)visitor).visitExpression(this);
+			if ( visitor instanceof EasyLangVisitor ) return ((EasyLangVisitor<? extends T>)visitor).visitExpression(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -367,15 +367,15 @@ public class ChatParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_flowExpression; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).enterFlowExpression(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).enterFlowExpression(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).exitFlowExpression(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).exitFlowExpression(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ChatVisitor ) return ((ChatVisitor<? extends T>)visitor).visitFlowExpression(this);
+			if ( visitor instanceof EasyLangVisitor ) return ((EasyLangVisitor<? extends T>)visitor).visitFlowExpression(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -417,26 +417,26 @@ public class ChatParser extends Parser {
 	}
 
 	public static class PrintExpressionContext extends ParserRuleContext {
-		public TerminalNode T_PRINT() { return getToken(ChatParser.T_PRINT, 0); }
+		public TerminalNode T_PRINT() { return getToken(EasyLangParser.T_PRINT, 0); }
 		public ValueContext value() {
 			return getRuleContext(ValueContext.class,0);
 		}
-		public TerminalNode T_ID() { return getToken(ChatParser.T_ID, 0); }
+		public TerminalNode T_ID() { return getToken(EasyLangParser.T_ID, 0); }
 		public PrintExpressionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_printExpression; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).enterPrintExpression(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).enterPrintExpression(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).exitPrintExpression(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).exitPrintExpression(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ChatVisitor ) return ((ChatVisitor<? extends T>)visitor).visitPrintExpression(this);
+			if ( visitor instanceof EasyLangVisitor ) return ((EasyLangVisitor<? extends T>)visitor).visitPrintExpression(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -488,7 +488,7 @@ public class ChatParser extends Parser {
 	}
 
 	public static class StartFunctionContext extends ParserRuleContext {
-		public TerminalNode T_START() { return getToken(ChatParser.T_START, 0); }
+		public TerminalNode T_START() { return getToken(EasyLangParser.T_START, 0); }
 		public CodeContext code() {
 			return getRuleContext(CodeContext.class,0);
 		}
@@ -498,15 +498,15 @@ public class ChatParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_startFunction; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).enterStartFunction(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).enterStartFunction(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).exitStartFunction(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).exitStartFunction(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ChatVisitor ) return ((ChatVisitor<? extends T>)visitor).visitStartFunction(this);
+			if ( visitor instanceof EasyLangVisitor ) return ((EasyLangVisitor<? extends T>)visitor).visitStartFunction(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -541,23 +541,23 @@ public class ChatParser extends Parser {
 	}
 
 	public static class Bool_valContext extends ParserRuleContext {
-		public TerminalNode T_BOOL_TRUE() { return getToken(ChatParser.T_BOOL_TRUE, 0); }
-		public TerminalNode T_BOOL_FALSE() { return getToken(ChatParser.T_BOOL_FALSE, 0); }
+		public TerminalNode T_BOOL_TRUE() { return getToken(EasyLangParser.T_BOOL_TRUE, 0); }
+		public TerminalNode T_BOOL_FALSE() { return getToken(EasyLangParser.T_BOOL_FALSE, 0); }
 		public Bool_valContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_bool_val; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).enterBool_val(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).enterBool_val(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).exitBool_val(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).exitBool_val(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ChatVisitor ) return ((ChatVisitor<? extends T>)visitor).visitBool_val(this);
+			if ( visitor instanceof EasyLangVisitor ) return ((EasyLangVisitor<? extends T>)visitor).visitBool_val(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -593,24 +593,24 @@ public class ChatParser extends Parser {
 	}
 
 	public static class TypeContext extends ParserRuleContext {
-		public TerminalNode T_INTEGER() { return getToken(ChatParser.T_INTEGER, 0); }
-		public TerminalNode T_STRING() { return getToken(ChatParser.T_STRING, 0); }
-		public TerminalNode T_BOOL() { return getToken(ChatParser.T_BOOL, 0); }
+		public TerminalNode T_INTEGER() { return getToken(EasyLangParser.T_INTEGER, 0); }
+		public TerminalNode T_STRING() { return getToken(EasyLangParser.T_STRING, 0); }
+		public TerminalNode T_BOOL() { return getToken(EasyLangParser.T_BOOL, 0); }
 		public TypeContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_type; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).enterType(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).enterType(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).exitType(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).exitType(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ChatVisitor ) return ((ChatVisitor<? extends T>)visitor).visitType(this);
+			if ( visitor instanceof EasyLangVisitor ) return ((EasyLangVisitor<? extends T>)visitor).visitType(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -646,8 +646,8 @@ public class ChatParser extends Parser {
 	}
 
 	public static class ValueContext extends ParserRuleContext {
-		public TerminalNode T_INTEGER_VAL() { return getToken(ChatParser.T_INTEGER_VAL, 0); }
-		public TerminalNode T_STRING_VAL() { return getToken(ChatParser.T_STRING_VAL, 0); }
+		public TerminalNode T_INTEGER_VAL() { return getToken(EasyLangParser.T_INTEGER_VAL, 0); }
+		public TerminalNode T_STRING_VAL() { return getToken(EasyLangParser.T_STRING_VAL, 0); }
 		public Bool_valContext bool_val() {
 			return getRuleContext(Bool_valContext.class,0);
 		}
@@ -657,15 +657,15 @@ public class ChatParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_value; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).enterValue(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).enterValue(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).exitValue(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).exitValue(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ChatVisitor ) return ((ChatVisitor<? extends T>)visitor).visitValue(this);
+			if ( visitor instanceof EasyLangVisitor ) return ((EasyLangVisitor<? extends T>)visitor).visitValue(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -674,18 +674,18 @@ public class ChatParser extends Parser {
 		ValueContext _localctx = new ValueContext(_ctx, getState());
 		enterRule(_localctx, 16, RULE_value);
 		try {
-			enterOuterAlt(_localctx, 1);
-			{
 			setState(103);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case T_INTEGER_VAL:
+				enterOuterAlt(_localctx, 1);
 				{
 				setState(100);
 				match(T_INTEGER_VAL);
 				}
 				break;
 			case T_STRING_VAL:
+				enterOuterAlt(_localctx, 2);
 				{
 				setState(101);
 				match(T_STRING_VAL);
@@ -693,6 +693,7 @@ public class ChatParser extends Parser {
 				break;
 			case T_BOOL_TRUE:
 			case T_BOOL_FALSE:
+				enterOuterAlt(_localctx, 3);
 				{
 				setState(102);
 				bool_val();
@@ -700,7 +701,6 @@ public class ChatParser extends Parser {
 				break;
 			default:
 				throw new NoViableAltException(this);
-			}
 			}
 		}
 		catch (RecognitionException re) {
@@ -718,7 +718,7 @@ public class ChatParser extends Parser {
 		public TypeContext type() {
 			return getRuleContext(TypeContext.class,0);
 		}
-		public TerminalNode T_ID() { return getToken(ChatParser.T_ID, 0); }
+		public TerminalNode T_ID() { return getToken(EasyLangParser.T_ID, 0); }
 		public FactorContext factor() {
 			return getRuleContext(FactorContext.class,0);
 		}
@@ -728,15 +728,15 @@ public class ChatParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_varDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).enterVarDeclaration(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).enterVarDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).exitVarDeclaration(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).exitVarDeclaration(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ChatVisitor ) return ((ChatVisitor<? extends T>)visitor).visitVarDeclaration(this);
+			if ( visitor instanceof EasyLangVisitor ) return ((EasyLangVisitor<? extends T>)visitor).visitVarDeclaration(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -784,7 +784,7 @@ public class ChatParser extends Parser {
 	}
 
 	public static class VarExpressionContext extends ParserRuleContext {
-		public TerminalNode T_ID() { return getToken(ChatParser.T_ID, 0); }
+		public TerminalNode T_ID() { return getToken(EasyLangParser.T_ID, 0); }
 		public FactorContext factor() {
 			return getRuleContext(FactorContext.class,0);
 		}
@@ -794,15 +794,15 @@ public class ChatParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_varExpression; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).enterVarExpression(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).enterVarExpression(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).exitVarExpression(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).exitVarExpression(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ChatVisitor ) return ((ChatVisitor<? extends T>)visitor).visitVarExpression(this);
+			if ( visitor instanceof EasyLangVisitor ) return ((EasyLangVisitor<? extends T>)visitor).visitVarExpression(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -833,7 +833,7 @@ public class ChatParser extends Parser {
 	}
 
 	public static class FactorContext extends ParserRuleContext {
-		public TerminalNode T_ID() { return getToken(ChatParser.T_ID, 0); }
+		public TerminalNode T_ID() { return getToken(EasyLangParser.T_ID, 0); }
 		public ValueContext value() {
 			return getRuleContext(ValueContext.class,0);
 		}
@@ -846,15 +846,15 @@ public class ChatParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_factor; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).enterFactor(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).enterFactor(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).exitFactor(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).exitFactor(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ChatVisitor ) return ((ChatVisitor<? extends T>)visitor).visitFactor(this);
+			if ( visitor instanceof EasyLangVisitor ) return ((EasyLangVisitor<? extends T>)visitor).visitFactor(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -901,8 +901,8 @@ public class ChatParser extends Parser {
 	}
 
 	public static class ArithmeticExpressionContext extends ParserRuleContext {
-		public TerminalNode T_INTEGER_VAL() { return getToken(ChatParser.T_INTEGER_VAL, 0); }
-		public TerminalNode T_ID() { return getToken(ChatParser.T_ID, 0); }
+		public TerminalNode T_INTEGER_VAL() { return getToken(EasyLangParser.T_INTEGER_VAL, 0); }
+		public TerminalNode T_ID() { return getToken(EasyLangParser.T_ID, 0); }
 		public List<ArithmeticExpressionContext> arithmeticExpression() {
 			return getRuleContexts(ArithmeticExpressionContext.class);
 		}
@@ -915,15 +915,15 @@ public class ChatParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_arithmeticExpression; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).enterArithmeticExpression(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).enterArithmeticExpression(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).exitArithmeticExpression(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).exitArithmeticExpression(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ChatVisitor ) return ((ChatVisitor<? extends T>)visitor).visitArithmeticExpression(this);
+			if ( visitor instanceof EasyLangVisitor ) return ((EasyLangVisitor<? extends T>)visitor).visitArithmeticExpression(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1042,27 +1042,27 @@ public class ChatParser extends Parser {
 	}
 
 	public static class ReturnnContext extends ParserRuleContext {
-		public TerminalNode T_RETURN() { return getToken(ChatParser.T_RETURN, 0); }
+		public TerminalNode T_RETURN() { return getToken(EasyLangParser.T_RETURN, 0); }
 		public ValueContext value() {
 			return getRuleContext(ValueContext.class,0);
 		}
-		public TerminalNode T_END_LINE() { return getToken(ChatParser.T_END_LINE, 0); }
-		public TerminalNode T_ID() { return getToken(ChatParser.T_ID, 0); }
+		public TerminalNode T_END_LINE() { return getToken(EasyLangParser.T_END_LINE, 0); }
+		public TerminalNode T_ID() { return getToken(EasyLangParser.T_ID, 0); }
 		public ReturnnContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_returnn; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).enterReturnn(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).enterReturnn(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).exitReturnn(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).exitReturnn(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ChatVisitor ) return ((ChatVisitor<? extends T>)visitor).visitReturnn(this);
+			if ( visitor instanceof EasyLangVisitor ) return ((EasyLangVisitor<? extends T>)visitor).visitReturnn(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1110,11 +1110,11 @@ public class ChatParser extends Parser {
 	}
 
 	public static class FunctionContext extends ParserRuleContext {
-		public TerminalNode T_FUNCTION() { return getToken(ChatParser.T_FUNCTION, 0); }
+		public TerminalNode T_FUNCTION() { return getToken(EasyLangParser.T_FUNCTION, 0); }
 		public TypeContext type() {
 			return getRuleContext(TypeContext.class,0);
 		}
-		public TerminalNode T_ID() { return getToken(ChatParser.T_ID, 0); }
+		public TerminalNode T_ID() { return getToken(EasyLangParser.T_ID, 0); }
 		public TypedArgListContext typedArgList() {
 			return getRuleContext(TypedArgListContext.class,0);
 		}
@@ -1130,15 +1130,15 @@ public class ChatParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_function; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).enterFunction(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).enterFunction(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).exitFunction(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).exitFunction(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ChatVisitor ) return ((ChatVisitor<? extends T>)visitor).visitFunction(this);
+			if ( visitor instanceof EasyLangVisitor ) return ((EasyLangVisitor<? extends T>)visitor).visitFunction(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1186,7 +1186,7 @@ public class ChatParser extends Parser {
 		public TypeContext type() {
 			return getRuleContext(TypeContext.class,0);
 		}
-		public TerminalNode T_ID() { return getToken(ChatParser.T_ID, 0); }
+		public TerminalNode T_ID() { return getToken(EasyLangParser.T_ID, 0); }
 		public TypedArgListContext typedArgList() {
 			return getRuleContext(TypedArgListContext.class,0);
 		}
@@ -1196,15 +1196,15 @@ public class ChatParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_typedArgList; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).enterTypedArgList(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).enterTypedArgList(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).exitTypedArgList(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).exitTypedArgList(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ChatVisitor ) return ((ChatVisitor<? extends T>)visitor).visitTypedArgList(this);
+			if ( visitor instanceof EasyLangVisitor ) return ((EasyLangVisitor<? extends T>)visitor).visitTypedArgList(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1264,15 +1264,15 @@ public class ChatParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_argList; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).enterArgList(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).enterArgList(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).exitArgList(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).exitArgList(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ChatVisitor ) return ((ChatVisitor<? extends T>)visitor).visitArgList(this);
+			if ( visitor instanceof EasyLangVisitor ) return ((EasyLangVisitor<? extends T>)visitor).visitArgList(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1316,7 +1316,7 @@ public class ChatParser extends Parser {
 	}
 
 	public static class FunctionCallContext extends ParserRuleContext {
-		public TerminalNode T_ID() { return getToken(ChatParser.T_ID, 0); }
+		public TerminalNode T_ID() { return getToken(EasyLangParser.T_ID, 0); }
 		public ArgListContext argList() {
 			return getRuleContext(ArgListContext.class,0);
 		}
@@ -1326,15 +1326,15 @@ public class ChatParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_functionCall; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).enterFunctionCall(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).enterFunctionCall(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).exitFunctionCall(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).exitFunctionCall(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ChatVisitor ) return ((ChatVisitor<? extends T>)visitor).visitFunctionCall(this);
+			if ( visitor instanceof EasyLangVisitor ) return ((EasyLangVisitor<? extends T>)visitor).visitFunctionCall(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1367,37 +1367,37 @@ public class ChatParser extends Parser {
 	}
 
 	public static class LogicalExpressionContext extends ParserRuleContext {
-		public TerminalNode T_NOT() { return getToken(ChatParser.T_NOT, 0); }
+		public TerminalNode T_NOT() { return getToken(EasyLangParser.T_NOT, 0); }
 		public List<LogicalExpressionContext> logicalExpression() {
 			return getRuleContexts(LogicalExpressionContext.class);
 		}
 		public LogicalExpressionContext logicalExpression(int i) {
 			return getRuleContext(LogicalExpressionContext.class,i);
 		}
-		public TerminalNode T_ID() { return getToken(ChatParser.T_ID, 0); }
+		public TerminalNode T_ID() { return getToken(EasyLangParser.T_ID, 0); }
 		public CompareExpressionContext compareExpression() {
 			return getRuleContext(CompareExpressionContext.class,0);
 		}
 		public FunctionCallContext functionCall() {
 			return getRuleContext(FunctionCallContext.class,0);
 		}
-		public TerminalNode T_OR() { return getToken(ChatParser.T_OR, 0); }
-		public TerminalNode T_AND() { return getToken(ChatParser.T_AND, 0); }
+		public TerminalNode T_OR() { return getToken(EasyLangParser.T_OR, 0); }
+		public TerminalNode T_AND() { return getToken(EasyLangParser.T_AND, 0); }
 		public LogicalExpressionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_logicalExpression; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).enterLogicalExpression(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).enterLogicalExpression(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).exitLogicalExpression(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).exitLogicalExpression(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ChatVisitor ) return ((ChatVisitor<? extends T>)visitor).visitLogicalExpression(this);
+			if ( visitor instanceof EasyLangVisitor ) return ((EasyLangVisitor<? extends T>)visitor).visitLogicalExpression(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1516,15 +1516,15 @@ public class ChatParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_compareExpression; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).enterCompareExpression(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).enterCompareExpression(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).exitCompareExpression(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).exitCompareExpression(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ChatVisitor ) return ((ChatVisitor<? extends T>)visitor).visitCompareExpression(this);
+			if ( visitor instanceof EasyLangVisitor ) return ((EasyLangVisitor<? extends T>)visitor).visitCompareExpression(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1616,7 +1616,7 @@ public class ChatParser extends Parser {
 	}
 
 	public static class ConditionalExpressionContext extends ParserRuleContext {
-		public TerminalNode T_IF_CLAUSE() { return getToken(ChatParser.T_IF_CLAUSE, 0); }
+		public TerminalNode T_IF_CLAUSE() { return getToken(EasyLangParser.T_IF_CLAUSE, 0); }
 		public LogicalExpressionContext logicalExpression() {
 			return getRuleContext(LogicalExpressionContext.class,0);
 		}
@@ -1626,7 +1626,7 @@ public class ChatParser extends Parser {
 		public CodeContext code(int i) {
 			return getRuleContext(CodeContext.class,i);
 		}
-		public TerminalNode T_ELSE_CLAUSE() { return getToken(ChatParser.T_ELSE_CLAUSE, 0); }
+		public TerminalNode T_ELSE_CLAUSE() { return getToken(EasyLangParser.T_ELSE_CLAUSE, 0); }
 		public ConditionalExpressionContext conditionalExpression() {
 			return getRuleContext(ConditionalExpressionContext.class,0);
 		}
@@ -1636,15 +1636,15 @@ public class ChatParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_conditionalExpression; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).enterConditionalExpression(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).enterConditionalExpression(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).exitConditionalExpression(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).exitConditionalExpression(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ChatVisitor ) return ((ChatVisitor<? extends T>)visitor).visitConditionalExpression(this);
+			if ( visitor instanceof EasyLangVisitor ) return ((EasyLangVisitor<? extends T>)visitor).visitConditionalExpression(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1739,7 +1739,7 @@ public class ChatParser extends Parser {
 	}
 
 	public static class UntilExpressionContext extends ParserRuleContext {
-		public TerminalNode T_UNTIL_CLAUSE() { return getToken(ChatParser.T_UNTIL_CLAUSE, 0); }
+		public TerminalNode T_UNTIL_CLAUSE() { return getToken(EasyLangParser.T_UNTIL_CLAUSE, 0); }
 		public LogicalExpressionContext logicalExpression() {
 			return getRuleContext(LogicalExpressionContext.class,0);
 		}
@@ -1752,15 +1752,15 @@ public class ChatParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_untilExpression; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).enterUntilExpression(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).enterUntilExpression(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ChatListener ) ((ChatListener)listener).exitUntilExpression(this);
+			if ( listener instanceof EasyLangListener ) ((EasyLangListener)listener).exitUntilExpression(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ChatVisitor ) return ((ChatVisitor<? extends T>)visitor).visitUntilExpression(this);
+			if ( visitor instanceof EasyLangVisitor ) return ((EasyLangVisitor<? extends T>)visitor).visitUntilExpression(this);
 			else return visitor.visitChildren(this);
 		}
 	}

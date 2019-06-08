@@ -1,0 +1,24 @@
+funkcja calkowity dodawanie(calkowity x, calkowity y) {
+	calkowity a = x + y.
+	zwróć a.
+}
+
+start () {
+	wypisz(5).
+
+
+	dopoki(2<3) {
+		wypisz("dziala").
+		jezeli (x) {
+			dodawanie(2, 3).
+			} inaczej jezeli (2<3) {
+				wypisz(5).
+				dopoki(2>3) {
+					dodawanie(4, 5).
+				}
+			} inaczej {
+				wypisz("nie dziala").
+		}
+	}
+}
+

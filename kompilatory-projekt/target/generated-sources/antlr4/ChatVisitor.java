@@ -1,4 +1,4 @@
-// Generated from Chat.g4 by ANTLR 4.7
+// Generated from EasyLang.g4 by ANTLR 4.7
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**

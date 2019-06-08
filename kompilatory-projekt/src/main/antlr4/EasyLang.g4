@@ -1,9 +1,8 @@
-grammar Chat;
+grammar EasyLang;
 
 /*
  * Lexer Rules
  */
-
 
 T_END_LINE          : ('.');
 T_INTEGER           : ('calkowity'|'całkowity');
@@ -31,8 +30,6 @@ T_WHITESPACE        : (' ' | '\t' | '\n') -> skip ;
 
 
 
-
-
 /*
  * Parser Rules
  */
@@ -43,7 +40,7 @@ program :
     | startFunction EOF
     ;
 
-code    :
+code :
     expression T_END_LINE
     | expression T_END_LINE code
     | flowExpression
@@ -51,7 +48,7 @@ code    :
     | T_COMMENT code
     ;
 
-expression  :
+expression :
     varDeclaration
     | varExpression
     | printExpression
@@ -68,41 +65,61 @@ printExpression :
     | T_PRINT '(' T_ID ')'
     ;
 
-startFunction   :
+startFunction :
     T_START '()' '{' code '}'
     ;
 
-bool_val            : T_BOOL_TRUE | T_BOOL_FALSE;
+bool_val :
+    T_BOOL_TRUE
+    | T_BOOL_FALSE
+    ;
 
-type  : T_INTEGER | T_STRING | T_BOOL;
+type :
+    T_INTEGER
+    | T_STRING
+    | T_BOOL
+    ;
 
-value : (T_INTEGER_VAL | T_STRING_VAL | bool_val);
+value :
+    T_INTEGER_VAL
+    | T_STRING_VAL
+    | bool_val
+    ;
 
-varDeclaration        : type T_ID '=' factor | type T_ID;
+varDeclaration :
+    type T_ID '=' factor
+    | type T_ID
+    ;
 
-varExpression           : T_ID '=' factor;
+varExpression :
+    T_ID '=' factor
+    ;
 
-factor                : T_ID | value | arithmeticExpression;
+factor :
+    T_ID
+    | value
+    | arithmeticExpression
+    ;
 
 arithmeticExpression :
-            arithmeticExpression '*' arithmeticExpression
-           | arithmeticExpression '/' arithmeticExpression
-           | arithmeticExpression '+' arithmeticExpression
-           | arithmeticExpression '-' arithmeticExpression
-           | T_INTEGER_VAL
-           | T_ID
-           ;
+    arithmeticExpression '*' arithmeticExpression
+    | arithmeticExpression '/' arithmeticExpression
+    | arithmeticExpression '+' arithmeticExpression
+    | arithmeticExpression '-' arithmeticExpression
+    | T_INTEGER_VAL
+    | T_ID
+    ;
 
-returnn  :
+returnn :
     T_RETURN value T_END_LINE
     | T_RETURN T_ID T_END_LINE
     ;
 
-function    :
+function :
     T_FUNCTION type T_ID '(' typedArgList ')' '{' code returnn '}'
     ;
 
-typedArgList    :
+typedArgList :
     type T_ID
     | type T_ID ',' typedArgList
     ;
@@ -112,12 +129,11 @@ argList :
     | factor ',' argList
     ;
 
-functionCall    :
+functionCall :
     T_ID '(' argList ')'
     ;
 
-
-logicalExpression   :
+logicalExpression :
     logicalExpression T_OR logicalExpression
     | logicalExpression T_AND logicalExpression
     | T_NOT logicalExpression
@@ -126,7 +142,7 @@ logicalExpression   :
     | functionCall
     ;
 
-compareExpression   :
+compareExpression :
     factor '>' factor
     | factor '<' factor
     | factor '>=' factor
@@ -135,7 +151,7 @@ compareExpression   :
     | factor '!=' factor
     ;
 
-conditionalExpression   :
+conditionalExpression :
     T_IF_CLAUSE '(' logicalExpression ')' '{' code '}' T_ELSE_CLAUSE '{' code '}'
     | T_IF_CLAUSE '(' logicalExpression ')' '{' code '}' T_ELSE_CLAUSE conditionalExpression
     | T_IF_CLAUSE '(' logicalExpression ')' '{' code '}'
