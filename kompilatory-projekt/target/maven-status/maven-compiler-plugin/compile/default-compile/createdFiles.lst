@@ -1,0 +1,15 @@
+ChatParser$MessageContext.class
+ChatLexer.class
+ChatBaseListener.class
+ChatVisitor.class
+ChatParser$ColorContext.class
+ChatParser$LineContext.class
+ChatParser$CommandContext.class
+ChatBaseVisitor.class
+ChatParser$ChatContext.class
+ChatParser.class
+ChatParser$LinkContext.class
+ChatParser$MentionContext.class
+ChatParser$EmoticonContext.class
+ChatParser$NameContext.class
+ChatListener.class
