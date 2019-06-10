@@ -7,6 +7,16 @@ import org.antlr.v4.runtime.tree.ParseTreeListener;
  */
 public interface EasyLangListener extends ParseTreeListener {
 	/**
+	 * Enter a parse tree produced by {@link EasyLangParser#start}.
+	 * @param ctx the parse tree
+	 */
+	void enterStart(EasyLangParser.StartContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link EasyLangParser#start}.
+	 * @param ctx the parse tree
+	 */
+	void exitStart(EasyLangParser.StartContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link EasyLangParser#program}.
 	 * @param ctx the parse tree
 	 */

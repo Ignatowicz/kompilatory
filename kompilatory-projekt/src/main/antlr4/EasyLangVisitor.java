@@ -10,6 +10,12 @@ import org.antlr.v4.runtime.tree.ParseTreeVisitor;
  */
 public interface EasyLangVisitor<T> extends ParseTreeVisitor<T> {
 	/**
+	 * Visit a parse tree produced by {@link EasyLangParser#start}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitStart(EasyLangParser.StartContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link EasyLangParser#program}.
 	 * @param ctx the parse tree
 	 * @return the visitor result

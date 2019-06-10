@@ -5,7 +5,14 @@ funkcja calkowity dodawanie(calkowity x, calkowity y) {
 
 start () {
 	wypisz(5).
+    x = zmiennanasza.
 
+    logiczny a = prawda.
+    logiczny b = fałsz.
+
+    c = a + b * d - 3 / 1.
+
+    napis cos = "coscosik".
 
 	dopoki(2<3) {
 		wypisz("dziala").
@@ -21,4 +28,3 @@ start () {
 		}
 	}
 }
-
