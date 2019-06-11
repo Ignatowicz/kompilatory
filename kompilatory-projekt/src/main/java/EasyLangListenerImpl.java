@@ -72,7 +72,7 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
 //    public void exitPrintExpression(EasyLangParser.PrintExpressionContext ctx) {
 //        super.exitPrintExpression(ctx);
 //    }
-//
+
     private void ifPrint(EasyLangParser.PrintExpressionContext ctx) {
         if (ctx.T_ID() != null) {
             finalCode += "System.out.println(" + ctx.T_ID() + ")";
@@ -130,7 +130,7 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
 //    public void exitType(EasyLangParser.TypeContext ctx) {
 //        super.exitType(ctx);
 //    }
-//
+
     private void ifType(EasyLangParser.TypeContext ctx) {
         if (ctx.T_INTEGER() != null) {
             finalCode += "int ";
@@ -193,26 +193,26 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
         super.exitVarExpression(ctx);
     }
 
-    @Override
-    public void enterFactor(EasyLangParser.FactorContext ctx) {
-        super.enterFactor(ctx);
-
-        ifFactor(ctx);
-    }
-
-    @Override
-    public void exitFactor(EasyLangParser.FactorContext ctx) {
-        super.exitFactor(ctx);
-    }
+//    @Override
+//    public void enterFactor(EasyLangParser.FactorContext ctx) {
+//        super.enterFactor(ctx);
+//
+//        ifFactor(ctx);
+//    }
+//
+//    @Override
+//    public void exitFactor(EasyLangParser.FactorContext ctx) {
+//        super.exitFactor(ctx);
+//    }
 
     private void ifFactor(EasyLangParser.FactorContext ctx) {
-//        if (ctx.T_ID() != null) {
-//            finalCode += ctx.T_ID();
-//        }
-//
-//        if (ctx.value() != null) {
-//            ifValue(ctx.value());
-//        }
+        if (ctx.T_ID() != null) {
+            finalCode += ctx.T_ID();
+        }
+
+        if (ctx.value() != null) {
+            ifValue(ctx.value());
+        }
 
         if (ctx.arithmeticExpression() != null) {
             ifArithmeticExpression(ctx.arithmeticExpression());
@@ -234,15 +234,12 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
         enterArithmeticExpression(ctx);
     }
 
-
-
-
-    @Override
-    public void enterParenthesisExp(EasyLangParser.ParenthesisExpContext ctx) {
-        super.enterParenthesisExp(ctx);
-
-        finalCode += '(';
-    }
+//    @Override
+//    public void enterParenthesisExp(EasyLangParser.ParenthesisExpContext ctx) {
+//        super.enterParenthesisExp(ctx);
+//
+//        finalCode += '(';
+//    }
 //
 //    @Override
 //    public void exitParenthesisExp(EasyLangParser.ParenthesisExpContext ctx) {
@@ -250,7 +247,7 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
 //
 //        finalCode += ')';
 //    }
-
+//
 //    @Override
 //    public void enterMulDivExp(EasyLangParser.MulDivExpContext ctx) {
 //        super.enterMulDivExp(ctx);
@@ -341,7 +338,6 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
                 finalCode += " - " + right;
         }
     }
-
 
 //    @Override
 //    public void enterReturnn(EasyLangParser.ReturnnContext ctx) {
