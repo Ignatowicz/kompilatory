@@ -1,5 +1,5 @@
 funkcja calkowity dodawanie(calkowity x, calkowity y) {
-	calkowity a = x + y.
+	calkowity a = (x + y).
 	zwróć a.
 }
 
@@ -10,7 +10,7 @@ start () {
     logiczny a = prawda.
     logiczny b = fałsz.
 
-    c = a + b * d - 3 / 1.
+    c = a + b * (d - 3) / 1.
 
     napis cos = "coscosik".
 

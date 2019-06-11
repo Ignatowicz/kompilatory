@@ -8,7 +8,7 @@ public class EasyLang {
 
         ANTLRInputStream inputStream = new ANTLRInputStream(
                 "funkcja calkowity dodawanie(calkowity x, calkowity y) {\n" +
-                        "\tcalkowity a = x + y.\n" +
+                        "\tcalkowity a = (x + y).\n" +
                         "\tzwróć a.\n" +
                         "}\n" +
                         "\n" +
@@ -19,7 +19,7 @@ public class EasyLang {
                         "    logiczny a = prawda.\n" +
                         "    logiczny b = fałsz.\n" +
                         "    \n" +
-                        "    c = a + b * d - 3 / 1.\n" +
+                        "    c = a + b * (d - 3) / 1.\n" +
                         "\n" +
                         "    napis cos = \"coscosik\".\n" +
                         "\n" +

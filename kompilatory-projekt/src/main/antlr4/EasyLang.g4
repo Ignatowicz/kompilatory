@@ -28,6 +28,10 @@ T_ID                : [a-zA-Z_ąćęłńóśźż][a-zA-Z0-9_ąćęłńóśźż]*
 
 T_WHITESPACE        : (' ' | '\t' | '\n') -> skip ;
 
+T_ASTERISK          : '*';
+T_SLASH             : '/';
+T_PLUS              : '+';
+T_MINUS             : '-';
 
 
 /*
@@ -105,12 +109,11 @@ factor :
     ;
 
 arithmeticExpression :
-    arithmeticExpression '*' arithmeticExpression
-    | arithmeticExpression '/' arithmeticExpression
-    | arithmeticExpression '+' arithmeticExpression
-    | arithmeticExpression '-' arithmeticExpression
-    | T_INTEGER_VAL
-    | T_ID
+    '(' arithmeticExpression ')'                                            # parenthesisExp
+    | arithmeticExpression (T_ASTERISK|T_SLASH) arithmeticExpression        # mulDivExp
+    | arithmeticExpression (T_PLUS|T_MINUS) arithmeticExpression            # addSubExp
+    | T_INTEGER_VAL                                                         # numericAtomExp
+    | T_ID                                                                  # idAtomExp
     ;
 
 returnn :

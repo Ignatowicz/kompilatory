@@ -1,57 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84abbaaa-ff1c-4c28-9a46-1881a97e8e8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLangListenerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/EasyLang.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/EasyLang.g4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/EasyLang.interp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/EasyLangLexer.interp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/EasyLangListenerImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$StartContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/test_grammar.txt" afterDir="false" />
+    <list default="true" id="84abbaaa-ff1c-4c28-9a46-1881a97e8e8d" name="Default Changelist" comment="arithmetic expression done">
+      <change afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$AddSubExpContext.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$IdAtomExpContext.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$MulDivExpContext.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$NumericAtomExpContext.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$ParenthesisExpContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLang.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLang.g4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLang.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLang.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLang.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLang.tokens" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLangBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLangBaseListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLangBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLangBaseVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLangLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLangLexer.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLangLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLangLexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLangLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLangLexer.tokens" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLangListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLangListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLangListenerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLangListenerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLangParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLangParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLangVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLangVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test_grammar.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/test_grammar.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChatBaseListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChatBaseVisitor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChatLexer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChatListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChatParser$ArgListContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChatParser$ArithmeticExpressionContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChatParser$Bool_valContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChatParser$CodeContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChatParser$CompareExpressionContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChatParser$ConditionalExpressionContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChatParser$ExpressionContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChatParser$FactorContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChatParser$FlowExpressionContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChatParser$FunctionCallContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChatParser$FunctionContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChatParser$LogicalExpressionContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChatParser$PrintExpressionContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChatParser$ProgramContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChatParser$ReturnnContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChatParser$StartFunctionContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChatParser$TypeContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChatParser$TypedArgListContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChatParser$UntilExpressionContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChatParser$ValueContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChatParser$VarDeclarationContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChatParser$VarExpressionContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChatParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChatVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/antlr4/test_grammar.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/test_grammar.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLang.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLang.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLang.g4" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLang.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLang.interp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLang.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLang.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLang.tokens" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/EasyLangBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangBaseListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/EasyLangBaseVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangBaseVisitor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/EasyLangLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangLexer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangLexer.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangLexer.tokens" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/EasyLangListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangListenerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangListenerImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$ArgListContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$ArgListContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$ArithmeticExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$ArithmeticExpressionContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$Bool_valContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$Bool_valContext.class" afterDir="false" />
@@ -67,6 +48,7 @@
       <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$PrintExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$PrintExpressionContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$ProgramContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$ProgramContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$ReturnnContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$ReturnnContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$StartContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$StartContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$StartFunctionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$StartFunctionContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$TypeContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$TypeContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$TypedArgListContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$TypedArgListContext.class" afterDir="false" />
@@ -76,27 +58,7 @@
       <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$VarExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$VarExpressionContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/EasyLangVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/Chat.tokens" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/ChatBaseListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/ChatBaseVisitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/ChatLexer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/ChatLexer.tokens" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/ChatListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/ChatParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/ChatVisitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/EasyLang.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLang.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/EasyLangBaseListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/EasyLangBaseVisitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/EasyLangLexer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/EasyLangLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangLexer.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/EasyLangListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/EasyLangParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/EasyLangVisitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/kompilatory-projekt-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test_grammar.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test_grammar.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -117,8 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLang.g4">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="103" column="26" lean-forward="true" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
+            <state relative-caret-position="15">
+              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
             </state>
           </provider>
         </entry>
@@ -126,43 +88,43 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLangListenerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="192" column="36" lean-forward="true" selection-start-line="192" selection-start-column="36" selection-end-line="192" selection-end-column="36" />
+            <state relative-caret-position="368">
+              <caret line="248" column="13" lean-forward="true" selection-start-line="248" selection-start-column="13" selection-end-line="248" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4242#4243#0" expanded="true" />
-                <element signature="e#4381#4382#0" expanded="true" />
-                <element signature="e#4699#4700#0" expanded="true" />
-                <element signature="e#5103#5104#0" expanded="true" />
-                <element signature="e#6279#6280#0" expanded="true" />
-                <element signature="e#6400#6401#0" expanded="true" />
-                <element signature="e#6535#6536#0" expanded="true" />
-                <element signature="e#6668#6669#0" expanded="true" />
-                <element signature="e#6788#6789#0" expanded="true" />
-                <element signature="e#6906#6907#0" expanded="true" />
-                <element signature="e#7041#7042#0" expanded="true" />
-                <element signature="e#7174#7175#0" expanded="true" />
-                <element signature="e#7472#7473#0" expanded="true" />
-                <element signature="e#7770#7771#0" expanded="true" />
-                <element signature="e#8236#8237#0" expanded="true" />
-                <element signature="e#8378#8379#0" expanded="true" />
-                <element signature="e#8490#8491#0" expanded="true" />
-                <element signature="e#8600#8601#0" expanded="true" />
-                <element signature="e#8707#8708#0" expanded="true" />
-                <element signature="e#8813#8814#0" expanded="true" />
-                <element signature="e#8895#8896#0" expanded="true" />
-                <element signature="e#8990#8991#0" expanded="true" />
-                <element signature="e#9191#9192#0" expanded="true" />
+                <element signature="e#4353#4354#0" expanded="true" />
+                <element signature="e#4399#4400#0" expanded="true" />
+                <element signature="e#4493#4494#0" expanded="true" />
+                <element signature="e#4538#4539#0" expanded="true" />
+                <element signature="e#4812#4813#0" expanded="true" />
+                <element signature="e#4856#4857#0" expanded="true" />
+                <element signature="e#5223#5224#0" expanded="true" />
+                <element signature="e#5260#5261#0" expanded="true" />
+                <element signature="e#6643#6644#0" expanded="true" />
+                <element signature="e#6688#6689#0" expanded="true" />
+                <element signature="e#8390#8391#0" expanded="true" />
+                <element signature="e#8431#8432#0" expanded="true" />
+                <element signature="e#8555#8556#0" expanded="true" />
+                <element signature="e#10354#10355#0" expanded="true" />
+                <element signature="e#10475#10476#0" expanded="true" />
+                <element signature="e#10610#10611#0" expanded="true" />
+                <element signature="e#10743#10744#0" expanded="true" />
+                <element signature="e#10863#10864#0" expanded="true" />
+                <element signature="e#10981#10982#0" expanded="true" />
+                <element signature="e#11116#11117#0" expanded="true" />
+                <element signature="e#11249#11250#0" expanded="true" />
+                <element signature="e#11547#11548#0" expanded="true" />
+                <element signature="e#11845#11846#0" expanded="true" />
+                <element signature="e#12311#12312#0" expanded="true" />
+                <element signature="e#12453#12454#0" expanded="true" />
+                <element signature="e#12565#12566#0" expanded="true" />
+                <element signature="e#12675#12676#0" expanded="true" />
+                <element signature="e#12782#12783#0" expanded="true" />
+                <element signature="e#12888#12889#0" expanded="true" />
+                <element signature="e#12970#12971#0" expanded="true" />
+                <element signature="e#13065#13066#0" expanded="true" />
+                <element signature="e#13266#13267#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/antlr4/test_grammar.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -170,11 +132,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLang.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state>
+              <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/antlr4/test_grammar.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -215,8 +183,8 @@
         <option value="$PROJECT_DIR$/src/main/antlr4/ChatBaseListener.java" />
         <option value="$PROJECT_DIR$/src/main/antlr4/EasyLangBaseVisitor.java" />
         <option value="$PROJECT_DIR$/src/main/test_grammar.txt" />
-        <option value="$PROJECT_DIR$/src/main/antlr4/EasyLang.g4" />
         <option value="$PROJECT_DIR$/src/main/antlr4/EasyLangBaseListener.java" />
+        <option value="$PROJECT_DIR$/src/main/antlr4/EasyLang.g4" />
         <option value="$PROJECT_DIR$/src/main/antlr4/test_grammar.txt" />
         <option value="$PROJECT_DIR$/src/main/antlr4/EasyLang.java" />
         <option value="$PROJECT_DIR$/src/main/antlr4/EasyLangListenerImpl.java" />
@@ -291,8 +259,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -356,7 +324,8 @@
       <workItem from="1560037986888" duration="1168000" />
       <workItem from="1560075590843" duration="3458000" />
       <workItem from="1560150724251" duration="38000" />
-      <workItem from="1560180559917" duration="8659000" />
+      <workItem from="1560180559917" duration="11975000" />
+      <workItem from="1560234989895" duration="3787000" />
     </task>
     <task id="LOCAL-00001" summary="chat grammar">
       <created>1560020492668</created>
@@ -379,17 +348,24 @@
       <option name="project" value="LOCAL" />
       <updated>1560032231371</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="translator in progress">
+      <created>1560190731301</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1560190731301</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25244000" />
+    <option name="totallyTimeSpent" value="32347000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1166" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49902913" visible="true" weight="0.26574174" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49902913" visible="true" weight="0.16275346" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -397,10 +373,10 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.5009709" side_tool="true" weight="0.1782284" />
       <window_info id="Learn" order="7" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.3291262" />
+      <window_info anchor="bottom" id="Messages" order="0" visible="true" weight="0.3291262" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3291262" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.19902913" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.19902913" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -415,7 +391,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.2497332" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.1398079" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.1398079" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -430,7 +406,9 @@
     <MESSAGE value="chat grammar" />
     <MESSAGE value="project grammar in antlr" />
     <MESSAGE value="grammar updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="grammar updated" />
+    <MESSAGE value="translator in progress" />
+    <MESSAGE value="arithmetic expression done" />
+    <option name="LAST_COMMIT_MESSAGE" value="arithmetic expression done" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -459,20 +437,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLang.tokens">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLangParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLangListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLangBaseVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -494,59 +458,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLang.g4">
+    <entry file="file://$PROJECT_DIR$/target/classes/EasyLangListener.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="103" column="26" lean-forward="true" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
+        <state>
+          <folding>
+            <element signature="e#0#4143#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLang.java">
+    <entry file="file://$PROJECT_DIR$/target/classes/EasyLangBaseListener.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1125" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/antlr4/EasyLangVisitor.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLangListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLangParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLang.g4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/antlr4/test_grammar.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="180">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLang.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLangListenerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="192" column="36" lean-forward="true" selection-start-line="192" selection-start-column="36" selection-end-line="192" selection-end-column="36" />
+        <state relative-caret-position="368">
+          <caret line="248" column="13" lean-forward="true" selection-start-line="248" selection-start-column="13" selection-end-line="248" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4242#4243#0" expanded="true" />
-            <element signature="e#4381#4382#0" expanded="true" />
-            <element signature="e#4699#4700#0" expanded="true" />
-            <element signature="e#5103#5104#0" expanded="true" />
-            <element signature="e#6279#6280#0" expanded="true" />
-            <element signature="e#6400#6401#0" expanded="true" />
-            <element signature="e#6535#6536#0" expanded="true" />
-            <element signature="e#6668#6669#0" expanded="true" />
-            <element signature="e#6788#6789#0" expanded="true" />
-            <element signature="e#6906#6907#0" expanded="true" />
-            <element signature="e#7041#7042#0" expanded="true" />
-            <element signature="e#7174#7175#0" expanded="true" />
-            <element signature="e#7472#7473#0" expanded="true" />
-            <element signature="e#7770#7771#0" expanded="true" />
-            <element signature="e#8236#8237#0" expanded="true" />
-            <element signature="e#8378#8379#0" expanded="true" />
-            <element signature="e#8490#8491#0" expanded="true" />
-            <element signature="e#8600#8601#0" expanded="true" />
-            <element signature="e#8707#8708#0" expanded="true" />
-            <element signature="e#8813#8814#0" expanded="true" />
-            <element signature="e#8895#8896#0" expanded="true" />
-            <element signature="e#8990#8991#0" expanded="true" />
-            <element signature="e#9191#9192#0" expanded="true" />
+            <element signature="e#4353#4354#0" expanded="true" />
+            <element signature="e#4399#4400#0" expanded="true" />
+            <element signature="e#4493#4494#0" expanded="true" />
+            <element signature="e#4538#4539#0" expanded="true" />
+            <element signature="e#4812#4813#0" expanded="true" />
+            <element signature="e#4856#4857#0" expanded="true" />
+            <element signature="e#5223#5224#0" expanded="true" />
+            <element signature="e#5260#5261#0" expanded="true" />
+            <element signature="e#6643#6644#0" expanded="true" />
+            <element signature="e#6688#6689#0" expanded="true" />
+            <element signature="e#8390#8391#0" expanded="true" />
+            <element signature="e#8431#8432#0" expanded="true" />
+            <element signature="e#8555#8556#0" expanded="true" />
+            <element signature="e#10354#10355#0" expanded="true" />
+            <element signature="e#10475#10476#0" expanded="true" />
+            <element signature="e#10610#10611#0" expanded="true" />
+            <element signature="e#10743#10744#0" expanded="true" />
+            <element signature="e#10863#10864#0" expanded="true" />
+            <element signature="e#10981#10982#0" expanded="true" />
+            <element signature="e#11116#11117#0" expanded="true" />
+            <element signature="e#11249#11250#0" expanded="true" />
+            <element signature="e#11547#11548#0" expanded="true" />
+            <element signature="e#11845#11846#0" expanded="true" />
+            <element signature="e#12311#12312#0" expanded="true" />
+            <element signature="e#12453#12454#0" expanded="true" />
+            <element signature="e#12565#12566#0" expanded="true" />
+            <element signature="e#12675#12676#0" expanded="true" />
+            <element signature="e#12782#12783#0" expanded="true" />
+            <element signature="e#12888#12889#0" expanded="true" />
+            <element signature="e#12970#12971#0" expanded="true" />
+            <element signature="e#13065#13066#0" expanded="true" />
+            <element signature="e#13266#13267#0" expanded="true" />
           </folding>
         </state>
       </provider>

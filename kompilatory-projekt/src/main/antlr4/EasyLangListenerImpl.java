@@ -2,9 +2,14 @@ import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
 import org.antlr.v4.runtime.tree.TerminalNode;
 
+import java.util.Stack;
+
 public class EasyLangListenerImpl extends EasyLangBaseListener {
 
     public String finalCode = "";
+
+    private final Stack<Integer> argStack = new Stack<Integer>();
+    private final Stack<Integer> opStack = new Stack<Integer>();
 
 //    @Override
 //    public void enterStart(EasyLangParser.StartContext ctx) {
@@ -184,25 +189,153 @@ public class EasyLangListenerImpl extends EasyLangBaseListener {
     public void exitFactor(EasyLangParser.FactorContext ctx) {
         super.exitFactor(ctx);
     }
+// TODO
+//    @Override
+//    public void enterArithmeticExpression(EasyLangParser.ArithmeticExpressionContext ctx) {
+//        super.enterArithmeticExpression(ctx);
+//
+//        if (ctx.getChildCount() == 3) {
+//            System.out.println(ctx.getText());
+////            final int right = this.argStack.pop();
+////            final int left = this.argStack.pop();
+////            final int op = this.opStack.pop();
+////
+////            switch (op) {
+////                case "*":
+////
+////            }
+//        }
+//
+////        final int right = this.
+//
+////        System.out.println(ctx.arithmeticExpression()..toString());
+////        if (ctx.T_ID() != null) {
+////            finalCode += ctx.T_ID();
+////        } else if (ctx.T_INTEGER_VAL() != null) {
+////            finalCode += ctx.T_INTEGER_VAL();
+////        } else if (ctx.getText().contains("*")) {
+////            System.out.println("dupcia");
+////            finalCode += "*"; // TODO
+////        }
+//    }
+//
+//    @Override
+//    public void exitArithmeticExpression(EasyLangParser.ArithmeticExpressionContext ctx) {
+//        super.exitArithmeticExpression(ctx);
+//    }
+
 
     @Override
-    public void enterArithmeticExpression(EasyLangParser.ArithmeticExpressionContext ctx) {
-        super.enterArithmeticExpression(ctx);
+    public void enterParenthesisExp(EasyLangParser.ParenthesisExpContext ctx) {
+        super.enterParenthesisExp(ctx);
 
-        if (ctx.T_ID() != null) {
-            finalCode += ctx.T_ID();
-        } else if (ctx.T_INTEGER_VAL() != null) {
-            finalCode += ctx.T_INTEGER_VAL();
+        finalCode += '(';
+    }
+
+    @Override
+    public void exitParenthesisExp(EasyLangParser.ParenthesisExpContext ctx) {
+        super.exitParenthesisExp(ctx);
+
+        finalCode += ')';
+    }
+
+    @Override
+    public void enterNumericAtomExp(EasyLangParser.NumericAtomExpContext ctx) {
+        super.enterNumericAtomExp(ctx);
+
+//        finalCode += ctx.T_INTEGER_VAL();
+    }
+
+    @Override
+    public void exitNumericAtomExp(EasyLangParser.NumericAtomExpContext ctx) {
+        super.exitNumericAtomExp(ctx);
+    }
+
+    @Override
+    public void enterMulDivExp(EasyLangParser.MulDivExpContext ctx) {
+        super.enterMulDivExp(ctx);
+
+        String left = ctx.arithmeticExpression(0).getText();
+        String right = ctx.arithmeticExpression(1).getText();
+
+        if (left.length() == 1 && right.length() == 1) {
+            if (ctx.T_ASTERISK() != null)
+                finalCode += left + " * " + right;
+            else if (ctx.T_SLASH() != null)
+                finalCode += left + " / " + right;
         }
-        else if (ctx.arithmeticExpression().contains("*")) {
-            finalCode += ""; // TODO
+
+        if (left.length() == 1 && right.length() != 1) {
+            if (ctx.T_ASTERISK() != null)
+                finalCode += left + " * ";
+            else if (ctx.T_SLASH() != null)
+                finalCode += left + " / ";
+        }
+
+    }
+
+    @Override
+    public void exitMulDivExp(EasyLangParser.MulDivExpContext ctx) {
+        super.exitMulDivExp(ctx);
+
+        String left = ctx.arithmeticExpression(0).getText();
+        String right = ctx.arithmeticExpression(1).getText();
+
+        if (left.length() != 1 && right.length() == 1) {
+            if (ctx.T_ASTERISK() != null)
+                finalCode += " * " + right;
+            else if (ctx.T_SLASH() != null)
+                finalCode += " / " + right;
         }
     }
 
     @Override
-    public void exitArithmeticExpression(EasyLangParser.ArithmeticExpressionContext ctx) {
-        super.exitArithmeticExpression(ctx);
+    public void enterIdAtomExp(EasyLangParser.IdAtomExpContext ctx) {
+        super.enterIdAtomExp(ctx);
     }
+
+    @Override
+    public void exitIdAtomExp(EasyLangParser.IdAtomExpContext ctx) {
+        super.exitIdAtomExp(ctx);
+    }
+
+    @Override
+    public void enterAddSubExp(EasyLangParser.AddSubExpContext ctx) {
+        super.enterAddSubExp(ctx);
+
+        String left = ctx.arithmeticExpression(0).getText();
+        String right = ctx.arithmeticExpression(1).getText();
+
+        if (left.length() == 1 && right.length() == 1) {
+            if (ctx.T_PLUS() != null)
+                finalCode += left + " + " + right;
+            else if (ctx.T_MINUS() != null)
+                finalCode += left + " - " + right;
+        }
+
+        if (left.length() == 1 && right.length() != 1) {
+            if (ctx.T_PLUS() != null)
+                finalCode += left + " + ";
+            else if (ctx.T_MINUS() != null)
+                finalCode += left + " - ";
+        }
+    }
+
+    @Override
+    public void exitAddSubExp(EasyLangParser.AddSubExpContext ctx) {
+        super.exitAddSubExp(ctx);
+
+        String left = ctx.arithmeticExpression(0).getText();
+        String right = ctx.arithmeticExpression(1).getText();
+
+        if (left.length() != 1 && right.length() == 1) {
+            if (ctx.T_PLUS() != null)
+                finalCode += " + " + right;
+            else if (ctx.T_MINUS() != null)
+                finalCode += " - " + right;
+        }
+    }
+
 
 //    @Override
 //    public void enterReturnn(EasyLangParser.ReturnnContext ctx) {
