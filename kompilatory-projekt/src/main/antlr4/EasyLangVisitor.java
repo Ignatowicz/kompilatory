@@ -88,6 +88,78 @@ public interface EasyLangVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitFactor(EasyLangParser.FactorContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link EasyLangParser#returnn}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitReturnn(EasyLangParser.ReturnnContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link EasyLangParser#function}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitFunction(EasyLangParser.FunctionContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link EasyLangParser#typedArgList}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitTypedArgList(EasyLangParser.TypedArgListContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link EasyLangParser#argList}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitArgList(EasyLangParser.ArgListContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link EasyLangParser#functionCall}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitFunctionCall(EasyLangParser.FunctionCallContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code logicCompareExpr}
+	 * labeled alternative in {@link EasyLangParser#logicalExpression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitLogicCompareExpr(EasyLangParser.LogicCompareExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code logicFunctionCall}
+	 * labeled alternative in {@link EasyLangParser#logicalExpression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitLogicFunctionCall(EasyLangParser.LogicFunctionCallContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code logicParenthesis}
+	 * labeled alternative in {@link EasyLangParser#logicalExpression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitLogicParenthesis(EasyLangParser.LogicParenthesisContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code logicAndOr}
+	 * labeled alternative in {@link EasyLangParser#logicalExpression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitLogicAndOr(EasyLangParser.LogicAndOrContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code logicNot}
+	 * labeled alternative in {@link EasyLangParser#logicalExpression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitLogicNot(EasyLangParser.LogicNotContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code logicId}
+	 * labeled alternative in {@link EasyLangParser#logicalExpression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitLogicId(EasyLangParser.LogicIdContext ctx);
+	/**
 	 * Visit a parse tree produced by the {@code numericAtomExp}
 	 * labeled alternative in {@link EasyLangParser#arithmeticExpression}.
 	 * @param ctx the parse tree
@@ -122,42 +194,6 @@ public interface EasyLangVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitAddSubExp(EasyLangParser.AddSubExpContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link EasyLangParser#returnn}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitReturnn(EasyLangParser.ReturnnContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link EasyLangParser#function}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitFunction(EasyLangParser.FunctionContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link EasyLangParser#typedArgList}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitTypedArgList(EasyLangParser.TypedArgListContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link EasyLangParser#argList}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitArgList(EasyLangParser.ArgListContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link EasyLangParser#functionCall}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitFunctionCall(EasyLangParser.FunctionCallContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link EasyLangParser#logicalExpression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitLogicalExpression(EasyLangParser.LogicalExpressionContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link EasyLangParser#compareExpression}.
 	 * @param ctx the parse tree

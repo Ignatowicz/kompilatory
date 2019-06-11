@@ -22,10 +22,14 @@ public class EasyLang {
                         "    c = a + b * (d - 3) / 1.\n" +
                         "\n" +
                         "    napis cos = \"coscosik\".\n" +
+                        "    \n" +
+                        "    jezeli (nie jestem) {\n" +
+                        "        wypisz(\"nie ma mnie\").\n" +
+                        "    }\n" +
                         "\n" +
                         "    dodawanie(9).\n" +
                         "\n" +
-                        "\tdopoki(2 != 3) {\n" +
+                        "\tdopoki(2 != 3 oraz 2 > 4) {\n" +
                         "\t\twypisz(\"dziala\").\n" +
                         "\n" +
                         "\t\tjezeli (x) {\n" +

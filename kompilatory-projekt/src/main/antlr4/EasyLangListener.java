@@ -137,6 +137,128 @@ public interface EasyLangListener extends ParseTreeListener {
 	 */
 	void exitFactor(EasyLangParser.FactorContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link EasyLangParser#returnn}.
+	 * @param ctx the parse tree
+	 */
+	void enterReturnn(EasyLangParser.ReturnnContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link EasyLangParser#returnn}.
+	 * @param ctx the parse tree
+	 */
+	void exitReturnn(EasyLangParser.ReturnnContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link EasyLangParser#function}.
+	 * @param ctx the parse tree
+	 */
+	void enterFunction(EasyLangParser.FunctionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link EasyLangParser#function}.
+	 * @param ctx the parse tree
+	 */
+	void exitFunction(EasyLangParser.FunctionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link EasyLangParser#typedArgList}.
+	 * @param ctx the parse tree
+	 */
+	void enterTypedArgList(EasyLangParser.TypedArgListContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link EasyLangParser#typedArgList}.
+	 * @param ctx the parse tree
+	 */
+	void exitTypedArgList(EasyLangParser.TypedArgListContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link EasyLangParser#argList}.
+	 * @param ctx the parse tree
+	 */
+	void enterArgList(EasyLangParser.ArgListContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link EasyLangParser#argList}.
+	 * @param ctx the parse tree
+	 */
+	void exitArgList(EasyLangParser.ArgListContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link EasyLangParser#functionCall}.
+	 * @param ctx the parse tree
+	 */
+	void enterFunctionCall(EasyLangParser.FunctionCallContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link EasyLangParser#functionCall}.
+	 * @param ctx the parse tree
+	 */
+	void exitFunctionCall(EasyLangParser.FunctionCallContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code logicCompareExpr}
+	 * labeled alternative in {@link EasyLangParser#logicalExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterLogicCompareExpr(EasyLangParser.LogicCompareExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code logicCompareExpr}
+	 * labeled alternative in {@link EasyLangParser#logicalExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitLogicCompareExpr(EasyLangParser.LogicCompareExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code logicFunctionCall}
+	 * labeled alternative in {@link EasyLangParser#logicalExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterLogicFunctionCall(EasyLangParser.LogicFunctionCallContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code logicFunctionCall}
+	 * labeled alternative in {@link EasyLangParser#logicalExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitLogicFunctionCall(EasyLangParser.LogicFunctionCallContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code logicParenthesis}
+	 * labeled alternative in {@link EasyLangParser#logicalExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterLogicParenthesis(EasyLangParser.LogicParenthesisContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code logicParenthesis}
+	 * labeled alternative in {@link EasyLangParser#logicalExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitLogicParenthesis(EasyLangParser.LogicParenthesisContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code logicAndOr}
+	 * labeled alternative in {@link EasyLangParser#logicalExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterLogicAndOr(EasyLangParser.LogicAndOrContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code logicAndOr}
+	 * labeled alternative in {@link EasyLangParser#logicalExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitLogicAndOr(EasyLangParser.LogicAndOrContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code logicNot}
+	 * labeled alternative in {@link EasyLangParser#logicalExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterLogicNot(EasyLangParser.LogicNotContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code logicNot}
+	 * labeled alternative in {@link EasyLangParser#logicalExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitLogicNot(EasyLangParser.LogicNotContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code logicId}
+	 * labeled alternative in {@link EasyLangParser#logicalExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterLogicId(EasyLangParser.LogicIdContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code logicId}
+	 * labeled alternative in {@link EasyLangParser#logicalExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitLogicId(EasyLangParser.LogicIdContext ctx);
+	/**
 	 * Enter a parse tree produced by the {@code numericAtomExp}
 	 * labeled alternative in {@link EasyLangParser#arithmeticExpression}.
 	 * @param ctx the parse tree
@@ -196,66 +318,6 @@ public interface EasyLangListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitAddSubExp(EasyLangParser.AddSubExpContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link EasyLangParser#returnn}.
-	 * @param ctx the parse tree
-	 */
-	void enterReturnn(EasyLangParser.ReturnnContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link EasyLangParser#returnn}.
-	 * @param ctx the parse tree
-	 */
-	void exitReturnn(EasyLangParser.ReturnnContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link EasyLangParser#function}.
-	 * @param ctx the parse tree
-	 */
-	void enterFunction(EasyLangParser.FunctionContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link EasyLangParser#function}.
-	 * @param ctx the parse tree
-	 */
-	void exitFunction(EasyLangParser.FunctionContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link EasyLangParser#typedArgList}.
-	 * @param ctx the parse tree
-	 */
-	void enterTypedArgList(EasyLangParser.TypedArgListContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link EasyLangParser#typedArgList}.
-	 * @param ctx the parse tree
-	 */
-	void exitTypedArgList(EasyLangParser.TypedArgListContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link EasyLangParser#argList}.
-	 * @param ctx the parse tree
-	 */
-	void enterArgList(EasyLangParser.ArgListContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link EasyLangParser#argList}.
-	 * @param ctx the parse tree
-	 */
-	void exitArgList(EasyLangParser.ArgListContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link EasyLangParser#functionCall}.
-	 * @param ctx the parse tree
-	 */
-	void enterFunctionCall(EasyLangParser.FunctionCallContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link EasyLangParser#functionCall}.
-	 * @param ctx the parse tree
-	 */
-	void exitFunctionCall(EasyLangParser.FunctionCallContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link EasyLangParser#logicalExpression}.
-	 * @param ctx the parse tree
-	 */
-	void enterLogicalExpression(EasyLangParser.LogicalExpressionContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link EasyLangParser#logicalExpression}.
-	 * @param ctx the parse tree
-	 */
-	void exitLogicalExpression(EasyLangParser.LogicalExpressionContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link EasyLangParser#compareExpression}.
 	 * @param ctx the parse tree

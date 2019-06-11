@@ -14,9 +14,13 @@ start () {
 
     napis cos = "coscosik".
 
+    jezeli (nie jestem) {
+        wypisz("nie ma mnie").
+    }
+
     dodawanie(9).
 
-	dopoki(2 != 3) {
+	dopoki(2 != 3 oraz 2 > 4) {
 		wypisz("dziala").
 
 		jezeli (x) {

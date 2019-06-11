@@ -115,14 +115,6 @@ factor :
     | arithmeticExpression
     ;
 
-arithmeticExpression :
-    '(' arithmeticExpression ')'                                            # parenthesisExp
-    | arithmeticExpression (T_ASTERISK|T_SLASH) arithmeticExpression        # mulDivExp
-    | arithmeticExpression (T_PLUS|T_MINUS) arithmeticExpression            # addSubExp
-    | T_INTEGER_VAL                                                         # numericAtomExp
-    | T_ID                                                                  # idAtomExp
-    ;
-
 returnn :
     T_RETURN value T_END_LINE
     | T_RETURN T_ID T_END_LINE
@@ -147,12 +139,20 @@ functionCall :
     ;
 
 logicalExpression :
-    logicalExpression T_OR logicalExpression
-    | logicalExpression T_AND logicalExpression
-    | T_NOT logicalExpression
-    | T_ID
-    | compareExpression
-    | functionCall
+    '(' logicalExpression ')'                           # logicParenthesis
+    | logicalExpression (T_AND|T_OR) logicalExpression  # logicAndOr
+    | T_NOT logicalExpression                           # logicNot
+    | compareExpression                                 # logicCompareExpr
+    | functionCall                                      # logicFunctionCall
+    | T_ID                                              # logicId
+    ;
+
+arithmeticExpression :
+    '(' arithmeticExpression ')'                                            # parenthesisExp
+    | arithmeticExpression (T_ASTERISK|T_SLASH) arithmeticExpression        # mulDivExp
+    | arithmeticExpression (T_PLUS|T_MINUS) arithmeticExpression            # addSubExp
+    | T_INTEGER_VAL                                                         # numericAtomExp
+    | T_ID                                                                  # idAtomExp
     ;
 
 compareExpression :

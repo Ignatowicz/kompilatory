@@ -22,4 +22,22 @@ public class EasyLangBaseListenerExt extends EasyLangBaseListener implements Eas
     public void exitArithmeticExpression(EasyLangParser.ArithmeticExpressionContext ctx) {
 
     }
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation does nothing.</p>
+     */
+    @Override
+    public void enterLogicalExpression(EasyLangParser.LogicalExpressionContext ctx) {
+
+    }
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation does nothing.</p>
+     */
+    @Override
+    public void exitLogicalExpression(EasyLangParser.LogicalExpressionContext ctx) {
+
+    }
 }

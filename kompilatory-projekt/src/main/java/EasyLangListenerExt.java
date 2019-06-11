@@ -13,4 +13,14 @@ public interface EasyLangListenerExt extends EasyLangListener {
      * @param ctx the parse tree
      */
     void exitArithmeticExpression(EasyLangParser.ArithmeticExpressionContext ctx);
+    /**
+     * Enter a parse tree produced by me {@link EasyLangParser#logicalExpression()}.
+     * @param ctx the parse tree
+     */
+    void enterLogicalExpression(EasyLangParser.LogicalExpressionContext ctx);
+    /**
+     * Exit a parse tree produced by me {@link EasyLangParser#logicalExpression()}.
+     * @param ctx the parse tree
+     */
+    void exitLogicalExpression(EasyLangParser.LogicalExpressionContext ctx);
 }

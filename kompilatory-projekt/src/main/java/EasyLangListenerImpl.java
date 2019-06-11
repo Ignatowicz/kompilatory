@@ -6,7 +6,7 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
 
     public String finalCode = "";
 
-
+    //TODO: done
 //    @Override
 //    public void enterStart(EasyLangParser.StartContext ctx) {
 //        super.enterStart(ctx);
@@ -49,6 +49,7 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
 
     }
 
+    //TODO: done
 //    @Override
 //    public void enterExpression(EasyLangParser.ExpressionContext ctx) {
 //        super.enterExpression(ctx);
@@ -82,6 +83,7 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
         super.exitFlowExpression(ctx);
     }
 
+    //TODO: done
 //    @Override
 //    public void enterPrintExpression(EasyLangParser.PrintExpressionContext ctx) {
 //        super.enterPrintExpression(ctx);
@@ -104,6 +106,7 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
         }
     }
 
+    //TODO: done
 //    @Override
 //    public void enterStartFunction(EasyLangParser.StartFunctionContext ctx) {
 //        super.enterStartFunction(ctx);
@@ -142,6 +145,7 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
         }
     }
 
+    //TODO: done
 //    @Override
 //    public void enterType(EasyLangParser.TypeContext ctx) {
 //        super.enterType(ctx);
@@ -168,6 +172,7 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
         }
     }
 
+    //TODO: done
 //    @Override
 //    public void enterValue(EasyLangParser.ValueContext ctx) {
 //        super.enterValue(ctx);
@@ -194,6 +199,7 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
         }
     }
 
+    //TODO: done
 //    @Override
 //    public void enterVarDeclaration(EasyLangParser.VarDeclarationContext ctx) {
 //        super.enterVarDeclaration(ctx);
@@ -220,6 +226,7 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
         }
     }
 
+    //TODO: done
 //    @Override
 //    public void enterVarExpression(EasyLangParser.VarExpressionContext ctx) {
 //        super.enterVarExpression(ctx);
@@ -233,6 +240,7 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
 //        super.exitVarExpression(ctx);
 //    }
 
+    //TODO: done
 //    @Override
 //    public void enterFactor(EasyLangParser.FactorContext ctx) {
 //        super.enterFactor(ctx);
@@ -274,6 +282,7 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
         enterArithmeticExpression(ctx);
     }
 
+    //TODO: done
 //    @Override
 //    public void enterParenthesisExp(EasyLangParser.ParenthesisExpContext ctx) {
 //        super.enterParenthesisExp(ctx);
@@ -379,6 +388,7 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
         }
     }
 
+    //TODO: done
 //    @Override
 //    public void enterReturnn(EasyLangParser.ReturnnContext ctx) {
 //        super.enterReturnn(ctx);
@@ -401,6 +411,7 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
         }
     }
 
+    //TODO: done
 //    @Override
 //    public void enterFunction(EasyLangParser.FunctionContext ctx) {
 //        super.enterFunction(ctx);
@@ -474,6 +485,7 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
             ifFactor(ctx.factor());
     }
 
+    //TODO: done
 //    @Override
 //    public void enterFunctionCall(EasyLangParser.FunctionCallContext ctx) {
 //        super.enterFunctionCall(ctx);
@@ -490,6 +502,7 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
 //        super.exitFunctionCall(ctx);
 //    }
 
+    //TODO: In progress, should work/cannot check it for now until if_clause expression is done - logical expressions
     @Override
     public void enterLogicalExpression(EasyLangParser.LogicalExpressionContext ctx) {
         super.enterLogicalExpression(ctx);
@@ -500,7 +513,118 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
         super.exitLogicalExpression(ctx);
     }
 
-//    @Override
+    private void ifLogicalExpression(EasyLangParser.LogicalExpressionContext ctx) {
+        enterLogicalExpression(ctx);
+    }
+
+    @Override
+    public void enterLogicParenthesis(EasyLangParser.LogicParenthesisContext ctx) {
+        super.enterLogicParenthesis(ctx);
+
+        finalCode += '(';
+    }
+
+    @Override
+    public void exitLogicParenthesis(EasyLangParser.LogicParenthesisContext ctx) {
+        super.exitLogicParenthesis(ctx);
+
+        finalCode += ')';
+    }
+
+    @Override
+    public void enterLogicAndOr(EasyLangParser.LogicAndOrContext ctx) {
+        super.enterLogicAndOr(ctx);
+
+        ifEnterLogicAndOr(ctx);
+    }
+
+    private void ifEnterLogicAndOr(EasyLangParser.LogicAndOrContext ctx) {
+        String left = ctx.logicalExpression(0).getText();
+        String right = ctx.logicalExpression(1).getText();
+
+        if (left.length() == 1 && right.length() == 1) {
+            if (ctx.T_AND() != null)
+                finalCode += left + " && " + right;
+            else if (ctx.T_OR() != null)
+                finalCode += left + " || " + right;
+        }
+
+        if (left.length() == 1 && right.length() != 1) {
+            if (ctx.T_AND() != null)
+                finalCode += left + " && ";
+            else if (ctx.T_OR() != null)
+                finalCode += left + " || ";
+        }
+    }
+
+    @Override
+    public void exitLogicAndOr(EasyLangParser.LogicAndOrContext ctx) {
+        super.exitLogicAndOr(ctx);
+
+        ifExitLogicAndOr(ctx);
+    }
+
+    private void ifExitLogicAndOr(EasyLangParser.LogicAndOrContext ctx) {
+        String left = ctx.logicalExpression(0).getText();
+        String right = ctx.logicalExpression(1).getText();
+
+        if (left.length() != 1 && right.length() == 1) {
+            if (ctx.T_AND() != null)
+                finalCode += " && " + right;
+            else if (ctx.T_OR() != null)
+                finalCode += " || " + right;
+        }
+    }
+
+    @Override
+    public void enterLogicFunctionCall(EasyLangParser.LogicFunctionCallContext ctx) {
+        super.enterLogicFunctionCall(ctx);
+
+        enterFunctionCall(ctx.functionCall());
+    }
+
+    @Override
+    public void exitLogicFunctionCall(EasyLangParser.LogicFunctionCallContext ctx) {
+        super.exitLogicFunctionCall(ctx);
+    }
+
+    @Override
+    public void enterLogicCompareExpr(EasyLangParser.LogicCompareExprContext ctx) {
+        super.enterLogicCompareExpr(ctx);
+
+        ifCompare(ctx.compareExpression());
+    }
+
+    @Override
+    public void exitLogicCompareExpr(EasyLangParser.LogicCompareExprContext ctx) {
+        super.exitLogicCompareExpr(ctx);
+    }
+
+    @Override
+    public void enterLogicNot(EasyLangParser.LogicNotContext ctx) {
+        super.enterLogicNot(ctx);
+
+        finalCode += "!";
+        ifLogicalExpression(ctx.logicalExpression());
+    }
+
+    @Override
+    public void exitLogicNot(EasyLangParser.LogicNotContext ctx) {
+        super.exitLogicNot(ctx);
+    }
+
+    @Override
+    public void enterLogicId(EasyLangParser.LogicIdContext ctx) {
+        super.enterLogicId(ctx);
+    }
+
+    @Override
+    public void exitLogicId(EasyLangParser.LogicIdContext ctx) {
+        super.exitLogicId(ctx);
+    }
+
+    //TODO: done
+//        @Override
 //    public void enterCompareExpression(EasyLangParser.CompareExpressionContext ctx) {
 //        super.enterCompareExpression(ctx);
 //
