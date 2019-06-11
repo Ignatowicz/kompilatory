@@ -4,12 +4,10 @@ import org.antlr.v4.runtime.tree.TerminalNode;
 
 import java.util.Stack;
 
-public class EasyLangListenerImpl extends EasyLangBaseListener {
+public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
 
     public String finalCode = "";
 
-    private final Stack<Integer> argStack = new Stack<Integer>();
-    private final Stack<Integer> opStack = new Stack<Integer>();
 
 //    @Override
 //    public void enterStart(EasyLangParser.StartContext ctx) {
@@ -69,17 +67,23 @@ public class EasyLangListenerImpl extends EasyLangBaseListener {
 //    public void enterPrintExpression(EasyLangParser.PrintExpressionContext ctx) {
 //        super.enterPrintExpression(ctx);
 //
-//        if (ctx.T_ID() != null) {
-//            finalCode += "System.out.println(" + ctx.T_ID() + ")";
-//        } else {
-//            finalCode += "System.out.println(" + ctx.value().getText() + ")";
-//        }
+//        ifPrint(ctx);
 //    }
 //
 //    @Override
 //    public void exitPrintExpression(EasyLangParser.PrintExpressionContext ctx) {
 //        super.exitPrintExpression(ctx);
 //    }
+//
+    private void ifPrint(EasyLangParser.PrintExpressionContext ctx) {
+        if (ctx.T_ID() != null) {
+            finalCode += "System.out.println(" + ctx.T_ID() + ")";
+        }
+
+        if (ctx.T_PRINT() != null){
+            finalCode += "System.out.println(" + ctx.value().getText() + ")";
+        }
+    }
 
 //    @Override
 //    public void enterStartFunction(EasyLangParser.StartFunctionContext ctx) {
@@ -99,57 +103,75 @@ public class EasyLangListenerImpl extends EasyLangBaseListener {
 //    public void enterBool_val(EasyLangParser.Bool_valContext ctx) {
 //        super.enterBool_val(ctx);
 //
-//        if (ctx.T_BOOL_TRUE() != null) {
-//            finalCode += "true";
-//        } else if (ctx.T_BOOL_FALSE() != null) {
-//            finalCode += "false";
-//        }
+//        ifBool(ctx);
 //    }
 //
 //    @Override
 //    public void exitBool_val(EasyLangParser.Bool_valContext ctx) {
 //        super.exitBool_val(ctx);
 //    }
+//
+    private void ifBool(EasyLangParser.Bool_valContext ctx) {
+        if (ctx.T_BOOL_TRUE() != null) {
+            finalCode += "true";
+        }
+
+        if (ctx.T_BOOL_FALSE() != null) {
+            finalCode += "false";
+        }
+    }
 
 //    @Override
 //    public void enterType(EasyLangParser.TypeContext ctx) {
 //        super.enterType(ctx);
 //
-//        if (ctx.T_INTEGER() != null) {
-//            finalCode += "int ";
-//        } else if (ctx.T_BOOL() != null) {
-//            finalCode += "boolean ";
-//        } else if (ctx.T_STRING() != null) {
-//            finalCode += "String ";
-//        }
+//        ifType(ctx);
 //    }
 //
 //    @Override
 //    public void exitType(EasyLangParser.TypeContext ctx) {
 //        super.exitType(ctx);
 //    }
+//
+    private void ifType(EasyLangParser.TypeContext ctx) {
+        if (ctx.T_INTEGER() != null) {
+            finalCode += "int ";
+        }
+
+        if (ctx.T_BOOL() != null) {
+            finalCode += "boolean ";
+        }
+
+        if (ctx.T_STRING() != null) {
+            finalCode += "String ";
+        }
+    }
 
 //    @Override
 //    public void enterValue(EasyLangParser.ValueContext ctx) {
 //        super.enterValue(ctx);
 //
-//        if (ctx.T_INTEGER_VAL() != null) {
-//            finalCode += ctx.T_INTEGER_VAL();
-//        } else if (ctx.T_STRING_VAL() != null) {
-//            finalCode += ctx.T_STRING_VAL();
-//        } else if (ctx.bool_val() != null) {
-//            if (ctx.bool_val().getText().equals("prawda")) {
-//                finalCode += "true";
-//            } else {
-//                finalCode += "false";
-//            }
-//        }
+//        ifValue(ctx);
 //    }
 //
 //    @Override
 //    public void exitValue(EasyLangParser.ValueContext ctx) {
 //        super.exitValue(ctx);
 //    }
+
+    private void ifValue(EasyLangParser.ValueContext ctx) {
+        if (ctx.T_INTEGER_VAL() != null) {
+            finalCode += ctx.T_INTEGER_VAL();
+        }
+
+        if (ctx.T_STRING_VAL() != null) {
+            finalCode += ctx.T_STRING_VAL();
+        }
+
+        if (ctx.bool_val() != null) {
+            ifBool(ctx.bool_val());
+        }
+    }
 
     @Override
     public void enterVarDeclaration(EasyLangParser.VarDeclarationContext ctx) {
@@ -177,52 +199,44 @@ public class EasyLangListenerImpl extends EasyLangBaseListener {
     public void enterFactor(EasyLangParser.FactorContext ctx) {
         super.enterFactor(ctx);
 
-//        if (ctx.T_ID() != null) {
-//            finalCode += ctx.T_ID();
-//        }
-//        else {
-//            finalCode += ctx.arithmeticExpression();
-//        }
+        ifFactor(ctx);
     }
 
     @Override
     public void exitFactor(EasyLangParser.FactorContext ctx) {
         super.exitFactor(ctx);
     }
-// TODO
-//    @Override
-//    public void enterArithmeticExpression(EasyLangParser.ArithmeticExpressionContext ctx) {
-//        super.enterArithmeticExpression(ctx);
-//
-//        if (ctx.getChildCount() == 3) {
-//            System.out.println(ctx.getText());
-////            final int right = this.argStack.pop();
-////            final int left = this.argStack.pop();
-////            final int op = this.opStack.pop();
-////
-////            switch (op) {
-////                case "*":
-////
-////            }
+
+    private void ifFactor(EasyLangParser.FactorContext ctx) {
+//        if (ctx.T_ID() != null) {
+//            finalCode += ctx.T_ID();
 //        }
 //
-////        final int right = this.
-//
-////        System.out.println(ctx.arithmeticExpression()..toString());
-////        if (ctx.T_ID() != null) {
-////            finalCode += ctx.T_ID();
-////        } else if (ctx.T_INTEGER_VAL() != null) {
-////            finalCode += ctx.T_INTEGER_VAL();
-////        } else if (ctx.getText().contains("*")) {
-////            System.out.println("dupcia");
-////            finalCode += "*"; // TODO
-////        }
-//    }
-//
-//    @Override
-//    public void exitArithmeticExpression(EasyLangParser.ArithmeticExpressionContext ctx) {
-//        super.exitArithmeticExpression(ctx);
-//    }
+//        if (ctx.value() != null) {
+//            ifValue(ctx.value());
+//        }
+
+        if (ctx.arithmeticExpression() != null) {
+            ifArithmeticExpression(ctx.arithmeticExpression());
+        }
+    }
+
+
+    @Override
+    public void enterArithmeticExpression(EasyLangParser.ArithmeticExpressionContext ctx) {
+        super.enterArithmeticExpression(ctx);
+    }
+
+    @Override
+    public void exitArithmeticExpression(EasyLangParser.ArithmeticExpressionContext ctx) {
+        super.exitArithmeticExpression(ctx);
+    }
+
+    private void ifArithmeticExpression(EasyLangParser.ArithmeticExpressionContext ctx) {
+        enterArithmeticExpression(ctx);
+    }
+
+
 
 
     @Override
@@ -231,30 +245,23 @@ public class EasyLangListenerImpl extends EasyLangBaseListener {
 
         finalCode += '(';
     }
+//
+//    @Override
+//    public void exitParenthesisExp(EasyLangParser.ParenthesisExpContext ctx) {
+//        super.exitParenthesisExp(ctx);
+//
+//        finalCode += ')';
+//    }
 
-    @Override
-    public void exitParenthesisExp(EasyLangParser.ParenthesisExpContext ctx) {
-        super.exitParenthesisExp(ctx);
+//    @Override
+//    public void enterMulDivExp(EasyLangParser.MulDivExpContext ctx) {
+//        super.enterMulDivExp(ctx);
+//
+//
+//        ifEnterMulDiv(ctx);
+//    }
 
-        finalCode += ')';
-    }
-
-    @Override
-    public void enterNumericAtomExp(EasyLangParser.NumericAtomExpContext ctx) {
-        super.enterNumericAtomExp(ctx);
-
-//        finalCode += ctx.T_INTEGER_VAL();
-    }
-
-    @Override
-    public void exitNumericAtomExp(EasyLangParser.NumericAtomExpContext ctx) {
-        super.exitNumericAtomExp(ctx);
-    }
-
-    @Override
-    public void enterMulDivExp(EasyLangParser.MulDivExpContext ctx) {
-        super.enterMulDivExp(ctx);
-
+    private void ifEnterMulDiv(EasyLangParser.MulDivExpContext ctx) {
         String left = ctx.arithmeticExpression(0).getText();
         String right = ctx.arithmeticExpression(1).getText();
 
@@ -271,13 +278,16 @@ public class EasyLangListenerImpl extends EasyLangBaseListener {
             else if (ctx.T_SLASH() != null)
                 finalCode += left + " / ";
         }
-
     }
 
-    @Override
-    public void exitMulDivExp(EasyLangParser.MulDivExpContext ctx) {
-        super.exitMulDivExp(ctx);
+//    @Override
+//    public void exitMulDivExp(EasyLangParser.MulDivExpContext ctx) {
+//        super.exitMulDivExp(ctx);
+//
+//        ifExitMulDiv(ctx);
+//    }
 
+    private void ifExitMulDiv(EasyLangParser.MulDivExpContext ctx) {
         String left = ctx.arithmeticExpression(0).getText();
         String right = ctx.arithmeticExpression(1).getText();
 
@@ -289,20 +299,14 @@ public class EasyLangListenerImpl extends EasyLangBaseListener {
         }
     }
 
-    @Override
-    public void enterIdAtomExp(EasyLangParser.IdAtomExpContext ctx) {
-        super.enterIdAtomExp(ctx);
-    }
+//    @Override
+//    public void enterAddSubExp(EasyLangParser.AddSubExpContext ctx) {
+//        super.enterAddSubExp(ctx);
+//
+//        ifEnterAddSub(ctx);
+//    }
 
-    @Override
-    public void exitIdAtomExp(EasyLangParser.IdAtomExpContext ctx) {
-        super.exitIdAtomExp(ctx);
-    }
-
-    @Override
-    public void enterAddSubExp(EasyLangParser.AddSubExpContext ctx) {
-        super.enterAddSubExp(ctx);
-
+    private void ifEnterAddSub(EasyLangParser.AddSubExpContext ctx) {
         String left = ctx.arithmeticExpression(0).getText();
         String right = ctx.arithmeticExpression(1).getText();
 
@@ -321,10 +325,14 @@ public class EasyLangListenerImpl extends EasyLangBaseListener {
         }
     }
 
-    @Override
-    public void exitAddSubExp(EasyLangParser.AddSubExpContext ctx) {
-        super.exitAddSubExp(ctx);
+//    @Override
+//    public void exitAddSubExp(EasyLangParser.AddSubExpContext ctx) {
+//        super.exitAddSubExp(ctx);
+//
+//        ifExitAddSub(ctx);
+//    }
 
+    private void ifExitAddSub(EasyLangParser.AddSubExpContext ctx) {
         String left = ctx.arithmeticExpression(0).getText();
         String right = ctx.arithmeticExpression(1).getText();
 
@@ -341,17 +349,23 @@ public class EasyLangListenerImpl extends EasyLangBaseListener {
 //    public void enterReturnn(EasyLangParser.ReturnnContext ctx) {
 //        super.enterReturnn(ctx);
 //
-//        if (ctx.T_ID() != null) {
-//            finalCode += "return " + ctx.T_ID() + ";";
-//        } else {
-//            finalCode += "return " + ctx.value().getText() + ";";
-//        }
+//        ifReturnn(ctx);
 //    }
 //
 //    @Override
 //    public void exitReturnn(EasyLangParser.ReturnnContext ctx) {
 //        super.exitReturnn(ctx);
 //    }
+
+    private void ifReturnn(EasyLangParser.ReturnnContext ctx) {
+        if (ctx.T_ID() != null) {
+            finalCode += "return " + ctx.T_ID() + ";";
+        }
+
+        if (ctx.value() != null) {
+            ifValue(ctx.value());
+        }
+    }
 
     @Override
     public void enterFunction(EasyLangParser.FunctionContext ctx) {
