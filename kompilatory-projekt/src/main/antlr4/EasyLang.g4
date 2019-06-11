@@ -15,6 +15,17 @@ T_UNTIL_CLAUSE      : ('dopóki'|'dopoki');
 T_AND               : ('oraz');
 T_OR                : ('albo');
 T_NOT               : ('nie');
+T_ASTERISK          : '*';
+T_SLASH             : '/';
+T_PLUS              : '+';
+T_MINUS             : '-';
+T_COMMA             : ',';
+T_LEQ               : '<=';
+T_GEQ               : '>=';
+T_L                 : '<';
+T_G                 : '>';
+T_NEQ               : '!=';
+T_EQ                : '==';
 T_FUNCTION          : ('funkcja');
 T_RETURN            : ('zwróć'|'zwroc');
 T_PRINT             : ('wypisz');
@@ -28,10 +39,6 @@ T_ID                : [a-zA-Z_ąćęłńóśźż][a-zA-Z0-9_ąćęłńóśźż]*
 
 T_WHITESPACE        : (' ' | '\t' | '\n') -> skip ;
 
-T_ASTERISK          : '*';
-T_SLASH             : '/';
-T_PLUS              : '+';
-T_MINUS             : '-';
 
 
 /*
@@ -126,13 +133,13 @@ function :
     ;
 
 typedArgList :
-    type T_ID
-    | type T_ID ',' typedArgList
+    left=type T_ID T_COMMA right=typedArgList
+    | type T_ID
     ;
 
 argList :
-    factor
-    | factor ',' argList
+    left=factor T_COMMA right=argList
+    | factor
     ;
 
 functionCall :
@@ -149,12 +156,12 @@ logicalExpression :
     ;
 
 compareExpression :
-    factor '>' factor
-    | factor '<' factor
-    | factor '>=' factor
-    | factor '<=' factor
-    | factor '==' factor
-    | factor '!=' factor
+    left=factor T_G right=factor
+    | left=factor T_L right=factor
+    | left=factor T_GEQ right=factor
+    | left=factor T_LEQ right=factor
+    | left=factor T_EQ right=factor
+    | left=factor T_NEQ right=factor
     ;
 
 conditionalExpression :

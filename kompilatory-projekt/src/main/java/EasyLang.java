@@ -18,22 +18,25 @@ public class EasyLang {
                         "\n" +
                         "    logiczny a = prawda.\n" +
                         "    logiczny b = fałsz.\n" +
-                        "    \n" +
+                        "\n" +
                         "    c = a + b * (d - 3) / 1.\n" +
                         "\n" +
                         "    napis cos = \"coscosik\".\n" +
                         "\n" +
-                        "\tdopoki(2<3) {\n" +
+                        "    dodawanie(9).\n" +
+                        "\n" +
+                        "\tdopoki(2 != 3) {\n" +
                         "\t\twypisz(\"dziala\").\n" +
+                        "\n" +
                         "\t\tjezeli (x) {\n" +
                         "\t\t\tdodawanie(2, 3).\n" +
-                        "\t\t\t} inaczej jezeli (2<3) {\n" +
-                        "\t\t\t\twypisz(5).\n" +
-                        "\t\t\t\tdopoki(2>3) {\n" +
-                        "\t\t\t\t\tdodawanie(4, 5).\n" +
-                        "\t\t\t\t}\n" +
-                        "\t\t\t} inaczej {\n" +
-                        "\t\t\t\twypisz(\"nie dziala\").\n" +
+                        "\t\t} inaczej jezeli (1 <= 2) {\n" +
+                        "\t\t\twypisz(5).\n" +
+                        "\t\t\tdopoki(4 > 5) {\n" +
+                        "\t\t\t\tdodawanie(4, 5, 1).\n" +
+                        "\t\t\t}\n" +
+                        "\t\t} inaczej {\n" +
+                        "\t\t\twypisz(\"nie dziala\").\n" +
                         "\t\t}\n" +
                         "\t}\n" +
                         "}\n");

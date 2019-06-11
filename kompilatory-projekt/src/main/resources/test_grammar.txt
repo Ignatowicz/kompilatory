@@ -14,17 +14,20 @@ start () {
 
     napis cos = "coscosik".
 
-	dopoki(2<3) {
+    dodawanie(9).
+
+	dopoki(2 != 3) {
 		wypisz("dziala").
+
 		jezeli (x) {
 			dodawanie(2, 3).
-			} inaczej jezeli (2<3) {
-				wypisz(5).
-				dopoki(2>3) {
-					dodawanie(4, 5).
-				}
-			} inaczej {
-				wypisz("nie dziala").
+		} inaczej jezeli (1 <= 2) {
+			wypisz(5).
+			dopoki(4 > 5) {
+				dodawanie(4, 5, 1).
+			}
+		} inaczej {
+			wypisz("nie dziala").
 		}
 	}
 }
