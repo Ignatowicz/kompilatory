@@ -502,7 +502,7 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
 //        super.exitFunctionCall(ctx);
 //    }
 
-    //TODO: In progress, should work/cannot check it for now until if_clause expression is done - logical expressions
+    //TODO: In progress, logic nie dziala
     @Override
     public void enterLogicalExpression(EasyLangParser.LogicalExpressionContext ctx) {
         super.enterLogicalExpression(ctx);
@@ -542,19 +542,29 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
         String left = ctx.logicalExpression(0).getText();
         String right = ctx.logicalExpression(1).getText();
 
-        if (left.length() == 1 && right.length() == 1) {
-            if (ctx.T_AND() != null)
-                finalCode += left + " && " + right;
-            else if (ctx.T_OR() != null)
-                finalCode += left + " || " + right;
-        }
+//        if (left == null) {
+//
+//        }
+//        if (ctx.T_AND() != null) {
+//            finalCode += " && ";
+//        }
+//        if (ctx.T_OR() != null) {
+//            finalCode += " || ";
+//        }
 
-        if (left.length() == 1 && right.length() != 1) {
-            if (ctx.T_AND() != null)
-                finalCode += left + " && ";
-            else if (ctx.T_OR() != null)
-                finalCode += left + " || ";
-        }
+//        if (left.length() == 1 && right.length() == 1) {
+//            if (ctx.T_AND() != null)
+//                finalCode += left + " && " + right;
+//            else if (ctx.T_OR() != null)
+//                finalCode += left + " || " + right;
+//        }
+//
+//        if (left.length() == 1 && right.length() != 1) {
+//            if (ctx.T_AND() != null)
+//                finalCode += left + " && ";
+//            else if (ctx.T_OR() != null)
+//                finalCode += left + " || ";
+//        }
     }
 
     @Override
@@ -565,15 +575,19 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
     }
 
     private void ifExitLogicAndOr(EasyLangParser.LogicAndOrContext ctx) {
-        String left = ctx.logicalExpression(0).getText();
-        String right = ctx.logicalExpression(1).getText();
 
-        if (left.length() != 1 && right.length() == 1) {
-            if (ctx.T_AND() != null)
-                finalCode += " && " + right;
-            else if (ctx.T_OR() != null)
-                finalCode += " || " + right;
-        }
+
+//        System.out.println("dupa");
+
+//        String left = ctx.logicalExpression(0).getText();
+//        String right = ctx.logicalExpression(1).getText();
+//
+//        if (left.length() != 1 && right.length() == 1) {
+//            if (ctx.T_AND() != null)
+//                finalCode += " && " + right;
+//            else if (ctx.T_OR() != null)
+//                finalCode += " || " + right;
+//        }
     }
 
     @Override
@@ -605,7 +619,7 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
         super.enterLogicNot(ctx);
 
         finalCode += "!";
-        ifLogicalExpression(ctx.logicalExpression());
+//        ifLogicalExpression(ctx.logicalExpression());
     }
 
     @Override
@@ -616,6 +630,8 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
     @Override
     public void enterLogicId(EasyLangParser.LogicIdContext ctx) {
         super.enterLogicId(ctx);
+
+//        finalCode += ctx.T_ID();
     }
 
     @Override
@@ -684,11 +700,22 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
     @Override
     public void enterUntilExpression(EasyLangParser.UntilExpressionContext ctx) {
         super.enterUntilExpression(ctx);
+
+        finalCode += "while (";
+
+        ifLogicalExpression(ctx.logicalExpression());
+
     }
 
     @Override
     public void exitUntilExpression(EasyLangParser.UntilExpressionContext ctx) {
         super.exitUntilExpression(ctx);
+
+        finalCode += ") {\n";
+
+        ifCode(ctx.code());
+
+        finalCode += "\n}";
     }
 
     @Override

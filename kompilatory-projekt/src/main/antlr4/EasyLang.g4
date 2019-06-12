@@ -35,7 +35,7 @@ T_INTEGER_VAL       : [-]?[0-9]+;
 T_BOOL_TRUE         : ( 'prawda');
 T_BOOL_FALSE        : ('fałsz' | 'falsz');
 T_STRING_VAL        : '"'[a-zA-Z_ąćęłńóśźż0-9 \t\n;]+'"';
-T_ID                : [a-zA-Z_ąćęłńóśźż][a-zA-Z0-9_ąćęłńóśźż]*;
+T_ID                : [a-zA-Z0-9_ąćęłńóśźż][a-zA-Z0-9_ąćęłńóśźż]*;
 
 T_WHITESPACE        : (' ' | '\t' | '\n') -> skip ;
 
