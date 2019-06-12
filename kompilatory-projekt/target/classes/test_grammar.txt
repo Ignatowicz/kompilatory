@@ -10,7 +10,7 @@ start () {
     logiczny a = prawda.
     logiczny b = fałsz.
 
-    c = a + b * (d - 3) / 1.
+    c = a5 + b * (d - 3) / 1.
 
     napis cos = "coscosik".
 
@@ -38,7 +38,11 @@ start () {
 
 
 start () {
-    dopoki(2 != 3 oraz 2 > 4) {
+    dopoki(2 != 3 oraz 2 > 4 albo nie a) {
     	wypisz("dziala").
+    }
+
+    dopoki(1 != 2) {
+        wypisz("1").
     }
 }

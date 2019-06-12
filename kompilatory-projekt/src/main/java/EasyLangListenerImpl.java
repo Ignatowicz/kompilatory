@@ -71,6 +71,8 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
             ifPrint(ctx.printExpression());
         if (ctx.functionCall() != null)
             enterFunctionCall(ctx.functionCall());
+//        if (ctx.logicalExpression() != null)
+//            ifLogicalExpression(ctx.logicalExpression());
     }
 
     @Override
@@ -296,7 +298,7 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
 //
 //        finalCode += ')';
 //    }
-//
+
 //    @Override
 //    public void enterMulDivExp(EasyLangParser.MulDivExpContext ctx) {
 //        super.enterMulDivExp(ctx);
@@ -309,14 +311,14 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
         String left = ctx.arithmeticExpression(0).getText();
         String right = ctx.arithmeticExpression(1).getText();
 
-        if (left.length() == 1 && right.length() == 1) {
+        if (ctx.arithmeticExpression(0).getChildCount() == 1 && ctx.arithmeticExpression(1).getChildCount() == 1) {
             if (ctx.T_ASTERISK() != null)
                 finalCode += left + " * " + right;
             else if (ctx.T_SLASH() != null)
                 finalCode += left + " / " + right;
         }
 
-        if (left.length() == 1 && right.length() != 1) {
+        if (ctx.arithmeticExpression(0).getChildCount() == 1 && ctx.arithmeticExpression(1).getChildCount() != 1) {
             if (ctx.T_ASTERISK() != null)
                 finalCode += left + " * ";
             else if (ctx.T_SLASH() != null)
@@ -335,7 +337,7 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
         String left = ctx.arithmeticExpression(0).getText();
         String right = ctx.arithmeticExpression(1).getText();
 
-        if (left.length() != 1 && right.length() == 1) {
+        if (ctx.arithmeticExpression(0).getChildCount() != 1 && ctx.arithmeticExpression(1).getChildCount() == 1) {
             if (ctx.T_ASTERISK() != null)
                 finalCode += " * " + right;
             else if (ctx.T_SLASH() != null)
@@ -354,14 +356,15 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
         String left = ctx.arithmeticExpression(0).getText();
         String right = ctx.arithmeticExpression(1).getText();
 
-        if (left.length() == 1 && right.length() == 1) {
+
+        if (ctx.arithmeticExpression(0).getChildCount() == 1 && ctx.arithmeticExpression(1).getChildCount() == 1) {
             if (ctx.T_PLUS() != null)
                 finalCode += left + " + " + right;
             else if (ctx.T_MINUS() != null)
                 finalCode += left + " - " + right;
         }
 
-        if (left.length() == 1 && right.length() != 1) {
+        if (ctx.arithmeticExpression(0).getChildCount() == 1 && ctx.arithmeticExpression(1).getChildCount() != 1) {
             if (ctx.T_PLUS() != null)
                 finalCode += left + " + ";
             else if (ctx.T_MINUS() != null)
@@ -377,10 +380,9 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
 //    }
 
     private void ifExitAddSub(EasyLangParser.AddSubExpContext ctx) {
-        String left = ctx.arithmeticExpression(0).getText();
         String right = ctx.arithmeticExpression(1).getText();
 
-        if (left.length() != 1 && right.length() == 1) {
+        if (ctx.arithmeticExpression(0).getChildCount() != 1 && ctx.arithmeticExpression(1).getChildCount() == 1) {
             if (ctx.T_PLUS() != null)
                 finalCode += " + " + right;
             else if (ctx.T_MINUS() != null)
@@ -438,17 +440,6 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
 //        super.exitFunction(ctx);
 //    }
 
-    // TODO Nie nadpisywac! usunac na koniec bo to zło czyste
-//    @Override
-//    public void enterTypedArgList(EasyLangParser.TypedArgListContext ctx) {
-//        super.enterTypedArgList(ctx);
-//    }
-//
-//    @Override
-//    public void exitTypedArgList(EasyLangParser.TypedArgListContext ctx) {
-//        super.exitTypedArgList(ctx);
-//    }
-
     private void ifTypedArgList(EasyLangParser.TypedArgListContext ctx) {
         if (ctx.T_COMMA() != null) {
             ifType(ctx.left);
@@ -460,21 +451,6 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
             finalCode += ctx.T_ID();
         }
     }
-
-    // TODO Nie nadpisywac! usunac na koniec bo to zło czyste
-//    @Override
-//    public void enterArgList(EasyLangParser.ArgListContext ctx) {
-//        super.enterArgList(ctx);
-//
-////        System.out.println(ctx.getText());
-//        ifEnterArgList(ctx);
-//    }
-//
-//
-//    @Override
-//    public void exitArgList(EasyLangParser.ArgListContext ctx) {
-//        super.exitArgList(ctx);
-//    }
 
     private void ifArgList(EasyLangParser.ArgListContext ctx) {
         if (ctx.T_COMMA() != null) {
@@ -502,19 +478,25 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
 //        super.exitFunctionCall(ctx);
 //    }
 
-    //TODO: In progress, logic nie dziala
-    @Override
-    public void enterLogicalExpression(EasyLangParser.LogicalExpressionContext ctx) {
-        super.enterLogicalExpression(ctx);
-    }
 
-    @Override
-    public void exitLogicalExpression(EasyLangParser.LogicalExpressionContext ctx) {
-        super.exitLogicalExpression(ctx);
-    }
-
+// TODO: done
     private void ifLogicalExpression(EasyLangParser.LogicalExpressionContext ctx) {
-        enterLogicalExpression(ctx);
+
+        if (ctx.getChildCount() == 1) {
+            if (ctx instanceof EasyLangParser.LogicCompareExprContext) {
+                ifCompare(((EasyLangParser.LogicCompareExprContext) ctx).compareExpression());
+            }
+            if (ctx instanceof EasyLangParser.LogicFunctionCallContext) {
+                enterFunctionCall(((EasyLangParser.LogicFunctionCallContext) ctx).functionCall());
+            }
+            if (ctx instanceof EasyLangParser.LogicIdContext) {
+                finalCode += ((EasyLangParser.LogicIdContext) ctx).T_ID();
+            }
+            if (ctx instanceof EasyLangParser.LogicNotContext) {
+                finalCode += "!";
+            }
+            return;
+        }
     }
 
     @Override
@@ -539,104 +521,36 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
     }
 
     private void ifEnterLogicAndOr(EasyLangParser.LogicAndOrContext ctx) {
-        String left = ctx.logicalExpression(0).getText();
-        String right = ctx.logicalExpression(1).getText();
 
-//        if (left == null) {
-//
-//        }
-//        if (ctx.T_AND() != null) {
-//            finalCode += " && ";
-//        }
-//        if (ctx.T_OR() != null) {
-//            finalCode += " || ";
-//        }
+        if (ctx.logicalExpression(0).getChildCount() == 1) {
+            ifLogicalExpression(ctx.logicalExpression(0));
+            if (ctx.T_AND() != null)
+                finalCode += " && ";
+            else if (ctx.T_OR() != null)
+                finalCode += " || ";
 
-//        if (left.length() == 1 && right.length() == 1) {
-//            if (ctx.T_AND() != null)
-//                finalCode += left + " && " + right;
-//            else if (ctx.T_OR() != null)
-//                finalCode += left + " || " + right;
-//        }
-//
-//        if (left.length() == 1 && right.length() != 1) {
-//            if (ctx.T_AND() != null)
-//                finalCode += left + " && ";
-//            else if (ctx.T_OR() != null)
-//                finalCode += left + " || ";
-//        }
+        }
+
+        if (ctx.children.get(ctx.children.size() - 1) == ctx.logicalExpression(1)) {
+            if (ctx.logicalExpression(1) instanceof EasyLangParser.LogicCompareExprContext) {
+                ifCompare(((EasyLangParser.LogicCompareExprContext) ctx.logicalExpression(1)).compareExpression());
+            }
+            if (ctx.logicalExpression(1) instanceof EasyLangParser.LogicFunctionCallContext) {
+                enterFunctionCall(((EasyLangParser.LogicFunctionCallContext) ctx.logicalExpression(1)).functionCall());
+            }
+            if (ctx.logicalExpression(1) instanceof EasyLangParser.LogicIdContext) {
+                finalCode += ((EasyLangParser.LogicIdContext) ctx.logicalExpression(1)).T_ID();
+            }
+            if (ctx.logicalExpression(1) instanceof EasyLangParser.LogicNotContext) {
+                finalCode += "!";
+                ifLogicalExpression((EasyLangParser.LogicalExpressionContext) ctx.logicalExpression(1).getChild(1));
+            }
+        }
     }
 
     @Override
     public void exitLogicAndOr(EasyLangParser.LogicAndOrContext ctx) {
         super.exitLogicAndOr(ctx);
-
-        ifExitLogicAndOr(ctx);
-    }
-
-    private void ifExitLogicAndOr(EasyLangParser.LogicAndOrContext ctx) {
-
-
-//        System.out.println("dupa");
-
-//        String left = ctx.logicalExpression(0).getText();
-//        String right = ctx.logicalExpression(1).getText();
-//
-//        if (left.length() != 1 && right.length() == 1) {
-//            if (ctx.T_AND() != null)
-//                finalCode += " && " + right;
-//            else if (ctx.T_OR() != null)
-//                finalCode += " || " + right;
-//        }
-    }
-
-    @Override
-    public void enterLogicFunctionCall(EasyLangParser.LogicFunctionCallContext ctx) {
-        super.enterLogicFunctionCall(ctx);
-
-        enterFunctionCall(ctx.functionCall());
-    }
-
-    @Override
-    public void exitLogicFunctionCall(EasyLangParser.LogicFunctionCallContext ctx) {
-        super.exitLogicFunctionCall(ctx);
-    }
-
-    @Override
-    public void enterLogicCompareExpr(EasyLangParser.LogicCompareExprContext ctx) {
-        super.enterLogicCompareExpr(ctx);
-
-        ifCompare(ctx.compareExpression());
-    }
-
-    @Override
-    public void exitLogicCompareExpr(EasyLangParser.LogicCompareExprContext ctx) {
-        super.exitLogicCompareExpr(ctx);
-    }
-
-    @Override
-    public void enterLogicNot(EasyLangParser.LogicNotContext ctx) {
-        super.enterLogicNot(ctx);
-
-        finalCode += "!";
-//        ifLogicalExpression(ctx.logicalExpression());
-    }
-
-    @Override
-    public void exitLogicNot(EasyLangParser.LogicNotContext ctx) {
-        super.exitLogicNot(ctx);
-    }
-
-    @Override
-    public void enterLogicId(EasyLangParser.LogicIdContext ctx) {
-        super.enterLogicId(ctx);
-
-//        finalCode += ctx.T_ID();
-    }
-
-    @Override
-    public void exitLogicId(EasyLangParser.LogicIdContext ctx) {
-        super.exitLogicId(ctx);
     }
 
     //TODO: done
