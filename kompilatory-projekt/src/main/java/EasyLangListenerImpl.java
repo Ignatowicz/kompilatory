@@ -38,6 +38,7 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
     @Override
     public void enterCode(EasyLangParser.CodeContext ctx) {
         super.enterCode(ctx);
+
     }
 
     @Override
@@ -495,7 +496,6 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
             if (ctx instanceof EasyLangParser.LogicNotContext) {
                 finalCode += "!";
             }
-            return;
         }
     }
 
