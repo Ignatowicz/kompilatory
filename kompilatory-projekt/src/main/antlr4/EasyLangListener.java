@@ -259,65 +259,15 @@ public interface EasyLangListener extends ParseTreeListener {
 	 */
 	void exitLogicId(EasyLangParser.LogicIdContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code numericAtomExp}
-	 * labeled alternative in {@link EasyLangParser#arithmeticExpression}.
+	 * Enter a parse tree produced by {@link EasyLangParser#arithmeticExpression}.
 	 * @param ctx the parse tree
 	 */
-	void enterNumericAtomExp(EasyLangParser.NumericAtomExpContext ctx);
+	void enterArithmeticExpression(EasyLangParser.ArithmeticExpressionContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code numericAtomExp}
-	 * labeled alternative in {@link EasyLangParser#arithmeticExpression}.
+	 * Exit a parse tree produced by {@link EasyLangParser#arithmeticExpression}.
 	 * @param ctx the parse tree
 	 */
-	void exitNumericAtomExp(EasyLangParser.NumericAtomExpContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code mulDivExp}
-	 * labeled alternative in {@link EasyLangParser#arithmeticExpression}.
-	 * @param ctx the parse tree
-	 */
-	void enterMulDivExp(EasyLangParser.MulDivExpContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code mulDivExp}
-	 * labeled alternative in {@link EasyLangParser#arithmeticExpression}.
-	 * @param ctx the parse tree
-	 */
-	void exitMulDivExp(EasyLangParser.MulDivExpContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code parenthesisExp}
-	 * labeled alternative in {@link EasyLangParser#arithmeticExpression}.
-	 * @param ctx the parse tree
-	 */
-	void enterParenthesisExp(EasyLangParser.ParenthesisExpContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code parenthesisExp}
-	 * labeled alternative in {@link EasyLangParser#arithmeticExpression}.
-	 * @param ctx the parse tree
-	 */
-	void exitParenthesisExp(EasyLangParser.ParenthesisExpContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code idAtomExp}
-	 * labeled alternative in {@link EasyLangParser#arithmeticExpression}.
-	 * @param ctx the parse tree
-	 */
-	void enterIdAtomExp(EasyLangParser.IdAtomExpContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code idAtomExp}
-	 * labeled alternative in {@link EasyLangParser#arithmeticExpression}.
-	 * @param ctx the parse tree
-	 */
-	void exitIdAtomExp(EasyLangParser.IdAtomExpContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code addSubExp}
-	 * labeled alternative in {@link EasyLangParser#arithmeticExpression}.
-	 * @param ctx the parse tree
-	 */
-	void enterAddSubExp(EasyLangParser.AddSubExpContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code addSubExp}
-	 * labeled alternative in {@link EasyLangParser#arithmeticExpression}.
-	 * @param ctx the parse tree
-	 */
-	void exitAddSubExp(EasyLangParser.AddSubExpContext ctx);
+	void exitArithmeticExpression(EasyLangParser.ArithmeticExpressionContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link EasyLangParser#compareExpression}.
 	 * @param ctx the parse tree

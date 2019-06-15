@@ -1,12 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84abbaaa-ff1c-4c28-9a46-1881a97e8e8d" name="Default Changelist" comment="">
+    <list default="true" id="ddc4ff2f-14a0-4878-a046-c584a2682601" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/TmpClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kompilatory-projekt.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLang.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLang.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLang.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLang.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLang.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLang.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLangBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLangBaseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLangBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLangBaseVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLangLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLangLexer.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLangLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLangLexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLangLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLangLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLangListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLangListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLangParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLangParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLangVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLangVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EasyLang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EasyLang.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/EasyLangListenerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EasyLangListenerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangListenerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangListenerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLang.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLang.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLang.g4" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLang.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLang.interp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLang.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLang.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLang.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangLexer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangLexer.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$AddSubExpContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$ArgListContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$ArgListContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$ArithmeticExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$ArithmeticExpressionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$Bool_valContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$Bool_valContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$CodeContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$CodeContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$CompareExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$CompareExpressionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$ConditionalExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$ConditionalExpressionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$ExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$ExpressionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$FactorContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$FactorContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$FlowExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$FlowExpressionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$FunctionCallContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$FunctionCallContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$FunctionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$FunctionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$IdAtomExpContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$LogicAndOrContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$LogicAndOrContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$LogicCompareExprContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$LogicCompareExprContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$LogicFunctionCallContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$LogicFunctionCallContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$LogicIdContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$LogicIdContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$LogicNotContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$LogicNotContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$LogicParenthesisContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$LogicParenthesisContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$LogicalExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$LogicalExpressionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$MulDivExpContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$NumericAtomExpContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$ParenthesisExpContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$PrintExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$PrintExpressionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$ProgramContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$ProgramContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$ReturnnContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$ReturnnContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$StartContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$StartContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$StartFunctionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$StartFunctionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$TypeContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$TypeContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$TypedArgListContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$TypedArgListContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$UntilExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$UntilExpressionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$ValueContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$ValueContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$VarDeclarationContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$VarDeclarationContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$VarExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$VarExpressionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/kompilatory-projekt.kotlin_module" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,50 +72,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="kompilatory-projekt" />
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLang.g4">
+        <entry file="file://$PROJECT_DIR$/src/main/java/EasyLangBaseListenerExt.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="167" column="23" lean-forward="true" selection-start-line="167" selection-start-column="23" selection-end-line="167" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/EasyLangListenerImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="626" lean-forward="true" selection-start-line="626" selection-end-line="626" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1078#1079#0" expanded="true" />
-                <element signature="e#1113#1114#0" expanded="true" />
-                <element signature="e#15981#15982#0" expanded="true" />
-                <element signature="e#18180#18181#0" expanded="true" />
-                <element signature="e#18290#18291#0" expanded="true" />
-                <element signature="e#18397#18398#0" expanded="true" />
-                <element signature="e#18503#18504#0" expanded="true" />
-                <element signature="e#18585#18586#0" expanded="true" />
-                <element signature="e#18680#18681#0" expanded="true" />
-                <element signature="e#18881#18882#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/test_grammar.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="75">
+              <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -65,11 +86,114 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/EasyLang.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="633">
-              <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+            <state relative-caret-position="405">
+              <caret line="35" column="48" lean-forward="true" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/EasyLangListenerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="336" selection-start-line="336" selection-end-line="336" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/TmpClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#497#498#0" expanded="true" />
+                <element signature="e#536#537#0" expanded="true" />
+                <element signature="e#616#617#0" expanded="true" />
+                <element signature="e#654#655#0" expanded="true" />
+                <element signature="e#729#730#0" expanded="true" />
+                <element signature="e#765#766#0" expanded="true" />
+                <element signature="e#839#840#0" expanded="true" />
+                <element signature="e#874#875#0" expanded="true" />
+                <element signature="e#961#962#0" expanded="true" />
+                <element signature="e#1003#1004#0" expanded="true" />
+                <element signature="e#1089#1090#0" expanded="true" />
+                <element signature="e#1130#1131#0" expanded="true" />
+                <element signature="e#1225#1226#0" expanded="true" />
+                <element signature="e#1271#1272#0" expanded="true" />
+                <element signature="e#1365#1366#0" expanded="true" />
+                <element signature="e#1410#1411#0" expanded="true" />
+                <element signature="e#1801#1802#0" expanded="true" />
+                <element signature="e#1847#1848#0" expanded="true" />
+                <element signature="e#2142#2143#0" expanded="true" />
+                <element signature="e#2186#2187#0" expanded="true" />
+                <element signature="e#2175#2176#0" expanded="true" />
+                <element signature="e#2214#2215#0" expanded="true" />
+                <element signature="e#2399#2400#0" expanded="true" />
+                <element signature="e#2434#2435#0" expanded="true" />
+                <element signature="e#3791#3792#0" expanded="true" />
+                <element signature="e#3932#3933#0" expanded="true" />
+                <element signature="e#4071#4072#0" expanded="true" />
+                <element signature="e#4209#4210#0" expanded="true" />
+                <element signature="e#4345#4346#0" expanded="true" />
+                <element signature="e#4462#4463#0" expanded="true" />
+                <element signature="e#4577#4578#0" expanded="true" />
+                <element signature="e#4697#4698#0" expanded="true" />
+                <element signature="e#4815#4816#0" expanded="true" />
+                <element signature="e#4938#4939#0" expanded="true" />
+                <element signature="e#5059#5060#0" expanded="true" />
+                <element signature="e#5194#5195#0" expanded="true" />
+                <element signature="e#5327#5328#0" expanded="true" />
+                <element signature="e#5447#5448#0" expanded="true" />
+                <element signature="e#5565#5566#0" expanded="true" />
+                <element signature="e#5700#5701#0" expanded="true" />
+                <element signature="e#5833#5834#0" expanded="true" />
+                <element signature="e#5980#5981#0" expanded="true" />
+                <element signature="e#6125#6126#0" expanded="true" />
+                <element signature="e#6423#6424#0" expanded="true" />
+                <element signature="e#6570#6571#0" expanded="true" />
+                <element signature="e#6715#6716#0" expanded="true" />
+                <element signature="e#6844#6845#0" expanded="true" />
+                <element signature="e#6971#6972#0" expanded="true" />
+                <element signature="e#7094#7095#0" expanded="true" />
+                <element signature="e#7215#7216#0" expanded="true" />
+                <element signature="e#7335#7336#0" expanded="true" />
+                <element signature="e#7453#7454#0" expanded="true" />
+                <element signature="e#7752#7753#0" expanded="true" />
+                <element signature="e#8218#8219#0" expanded="true" />
+                <element signature="e#8360#8361#0" expanded="true" />
+                <element signature="e#8472#8473#0" expanded="true" />
+                <element signature="e#8582#8583#0" expanded="true" />
+                <element signature="e#11225#11226#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar!/org/antlr/v4/runtime/tree/TerminalNode.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar!/org/antlr/v4/runtime/Token.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLang.g4">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="160" column="10" lean-forward="true" selection-start-line="160" selection-start-column="10" selection-end-line="160" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -85,36 +209,17 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pri</find>
-      <find>varExpre</find>
-      <find>boolv</find>
-      <find>bool_</find>
-      <find>returnn</find>
-      <find>arith</find>
-      <find>facto</find>
-      <find>valu</find>
-      <find>bool</find>
+      <find>ifCode</find>
+      <find>printE</find>
+      <find>T_COMMA</find>
       <find>type</find>
-      <find>var</find>
-      <find>compa</find>
-      <find>expression</find>
-      <find>varex</find>
-      <find>call</find>
-      <find>startF</find>
-      <find>logicalE</find>
-      <find>enterexpression</find>
-      <find>ifcod</find>
-      <find>enterexpre</find>
-      <find>functioncall</find>
-      <find>argLis</find>
-      <find>ifLo</find>
-      <find>logicalExpression</find>
-      <find>iffa</find>
-      <find>code</find>
+      <find>}</find>
+      <find>function</find>
+      <find>value</find>
+      <find>=</find>
+      <find>enterType</find>
+      <find>ar</find>
     </findStrings>
-    <replaceStrings>
-      <replace>EasyLang</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -122,28 +227,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/antlr4/Chat.g4" />
-        <option value="$PROJECT_DIR$/src/main/antlr4/ChatBaseListener.java" />
-        <option value="$PROJECT_DIR$/src/main/antlr4/EasyLangBaseVisitor.java" />
-        <option value="$PROJECT_DIR$/src/main/test_grammar.txt" />
-        <option value="$PROJECT_DIR$/src/main/antlr4/test_grammar.txt" />
-        <option value="$PROJECT_DIR$/src/main/antlr4/implCode/EasyLang.java" />
-        <option value="$PROJECT_DIR$/src/main/antlr4/EasyLang.java" />
-        <option value="$PROJECT_DIR$/src/main/antlr4/EasyLangListener.java" />
-        <option value="$PROJECT_DIR$/src/main/antlr4/EasyLangListenerExt.java" />
-        <option value="$PROJECT_DIR$/src/main/antlr4/EasyLangBaseListener.java" />
-        <option value="$PROJECT_DIR$/src/main/antlr4/EasyLangListenerImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/antlr4/EasyLangBaseListenerExt.java" />
-        <option value="$PROJECT_DIR$/src/main/java/antlr4/EasyLangListenerImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/antlr4/EasyLang.java" />
-        <option value="$PROJECT_DIR$/src/main/java/antlr4/EasyLang.g4" />
-        <option value="$PROJECT_DIR$/src/main/java/EasyLangBaseListenerExt.java" />
-        <option value="$PROJECT_DIR$/src/main/java/EasyLangListenerExt.java" />
-        <option value="$PROJECT_DIR$/src/main/antlr4/EasyLang.g4" />
-        <option value="$PROJECT_DIR$/src/main/resources/test_grammar.txt" />
         <option value="$PROJECT_DIR$/src/main/java/EasyLang.java" />
+        <option value="$PROJECT_DIR$/src/main/antlr4/EasyLang.g4" />
         <option value="$PROJECT_DIR$/src/main/java/EasyLangListenerImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TmpClass.java" />
       </list>
     </option>
   </component>
@@ -161,19 +248,15 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="kompilatory-projekt" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="kompilatory-projekt" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="564" />
-    <option name="width" value="1356" />
-    <option name="height" value="530" />
+    <option name="x" value="1433" />
+    <option name="y" value="25" />
+    <option name="width" value="1853" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -213,19 +296,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="kompilatory-projekt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kompilatory-projekt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kompilatory-projekt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kompilatory-projekt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -235,31 +305,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560634653525" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/antlr4" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/java" />
-      <recent name="$PROJECT_DIR$/src/main/antlr4/grammar" />
-      <recent name="$PROJECT_DIR$/src/main/antlr4" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -292,152 +343,51 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="84abbaaa-ff1c-4c28-9a46-1881a97e8e8d" name="Default Changelist" comment="" />
-      <created>1560020265359</created>
+      <changelist id="ddc4ff2f-14a0-4878-a046-c584a2682601" name="Default Changelist" comment="" />
+      <created>1560618923898</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1560020265359</updated>
-      <workItem from="1560020269682" duration="10028000" />
-      <workItem from="1560030350814" duration="1893000" />
-      <workItem from="1560037986888" duration="1168000" />
-      <workItem from="1560075590843" duration="3458000" />
-      <workItem from="1560150724251" duration="38000" />
-      <workItem from="1560180559917" duration="11975000" />
-      <workItem from="1560234989895" duration="19585000" />
-      <workItem from="1560290809067" duration="6675000" />
-      <workItem from="1560299532924" duration="4422000" />
-      <workItem from="1560331110763" duration="2325000" />
-      <workItem from="1560349759677" duration="16123000" />
+      <updated>1560618923898</updated>
+      <workItem from="1560618925399" duration="1689000" />
+      <workItem from="1560623011618" duration="5884000" />
     </task>
-    <task id="LOCAL-00001" summary="chat grammar">
-      <created>1560020492668</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1560020492668</updated>
-    </task>
-    <task id="LOCAL-00002" summary="project grammar in antlr">
-      <created>1560029309482</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1560029309482</updated>
-    </task>
-    <task id="LOCAL-00003" summary="grammar updated">
-      <created>1560032231371</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1560032231371</updated>
-    </task>
-    <task id="LOCAL-00004" summary="translator in progress">
-      <created>1560190731301</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1560190731301</updated>
-    </task>
-    <task id="LOCAL-00005" summary="arithmetic expression done">
-      <created>1560238817345</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1560238817345</updated>
-    </task>
-    <task id="LOCAL-00006" summary="restructure part 1">
-      <created>1560243367247</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1560243367247</updated>
-    </task>
-    <task id="LOCAL-00007" summary="restructure part 2">
-      <created>1560244501017</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1560244501017</updated>
-    </task>
-    <task id="LOCAL-00008" summary="restructure part 2">
-      <created>1560244576229</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1560244576229</updated>
-    </task>
-    <task id="LOCAL-00009" summary="refactor">
-      <created>1560245081835</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1560245081835</updated>
-    </task>
-    <task id="LOCAL-00010" summary="next parsing rules implementation">
-      <created>1560254539322</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1560254539322</updated>
-    </task>
-    <task id="LOCAL-00011" summary="logical expressions">
-      <created>1560294040804</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1560294040804</updated>
-    </task>
-    <task id="LOCAL-00012" summary="logical expressions - in progress">
-      <created>1560298775671</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1560298775671</updated>
-    </task>
-    <task id="LOCAL-00013" summary="logical expressions - done">
-      <created>1560365615054</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1560365615056</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77690000" />
+    <option name="totallyTimeSpent" value="7573000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1166" extended-state="6" />
+    <frame x="1433" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49902913" visible="true" weight="0.1755603" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1759823" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.5009709" side_tool="true" weight="0.1782284" />
-      <window_info id="Learn" order="7" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32718447" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.3291262" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.26407766" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.5936953" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Tool Output" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.49892008" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39956802" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32937366" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Tool Output" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32829374" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="ANTLR Preview" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.2497332" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.1398079" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.32982844" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -446,244 +396,113 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="chat grammar" />
-    <MESSAGE value="project grammar in antlr" />
-    <MESSAGE value="grammar updated" />
-    <MESSAGE value="translator in progress" />
-    <MESSAGE value="arithmetic expression done" />
-    <MESSAGE value="restructure part 1" />
-    <MESSAGE value="restructure part 2" />
-    <MESSAGE value="refactor" />
-    <MESSAGE value="next parsing rules implementation" />
-    <MESSAGE value="logical expressions" />
-    <MESSAGE value="logical expressions - in progress" />
-    <MESSAGE value="logical expressions - done" />
-    <option name="LAST_COMMIT_MESSAGE" value="logical expressions - done" />
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/antlr4/Chat.interp" />
-    <entry file="file://$PROJECT_DIR$/src/main/antlr4/Chat.tokens" />
-    <entry file="file://$PROJECT_DIR$/src/main/antlr4/ChatLexer.interp" />
-    <entry file="file://$PROJECT_DIR$/src/main/antlr4/ChatListener.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/antlr4/ChatLexer.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/antlr4/ChatBaseListener.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLangVisitor.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLangLexer.tokens">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/EasyLangListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#4143#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/EasyLangBaseListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1125" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar!/org/antlr/v4/runtime/tree/ParseTreeListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLang.interp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLang.tokens">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLangLexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLangBaseVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar!/org/antlr/v4/runtime/tree/TerminalNodeImpl.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar!/org/antlr/v4/runtime/Token.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#620#621#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar!/org/antlr/v4/runtime/CommonToken.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-          <folding>
-            <element signature="e#2183#2184#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/opt/java/jdk-11.0.3/lib/src.zip!/java.base/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="283" selection-start-line="283" selection-end-line="283" />
-          <folding>
-            <element signature="e#10623#10624#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar!/org/antlr/v4/runtime/ParserRuleContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="220" selection-start-line="220" selection-end-line="220" />
-          <folding>
-            <element signature="e#6537#6538#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/opt/java/jdk-11.0.3/lib/src.zip!/java.base/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/opt/java/jdk-11.0.3/lib/src.zip!/java.base/java/lang/AbstractStringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="91" selection-start-line="91" selection-end-line="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/opt/java/jdk-11.0.3/lib/src.zip!/java.base/java/lang/StringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
-          <folding>
-            <element signature="e#3454#3455#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar!/org/antlr/v4/runtime/RuleContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/antlr4/EasyLangVisitor.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar!/org/antlr/v4/runtime/tree/ParseTreeWalker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLangParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="335" column="40" selection-start-line="335" selection-start-column="40" selection-end-line="335" selection-end-column="40" />
-          <folding>
-            <element signature="e#10479#10480#0" expanded="true" />
-            <element signature="e#10543#10544#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLangListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/EasyLangListenerExt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="76" selection-start-line="24" selection-start-column="76" selection-end-line="24" selection-end-column="76" />
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/EasyLangBaseListenerExt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLangBaseListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="281" column="26" selection-start-line="281" selection-start-column="26" selection-end-line="281" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/test_grammar.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="75">
+          <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/EasyLang.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLang.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="167" column="23" lean-forward="true" selection-start-line="167" selection-start-column="23" selection-end-line="167" selection-end-column="23" />
+        <state relative-caret-position="405">
+          <caret line="35" column="48" lean-forward="true" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/EasyLangListenerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="626" lean-forward="true" selection-start-line="626" selection-end-line="626" />
+        <state relative-caret-position="75">
+          <caret line="336" selection-start-line="336" selection-end-line="336" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar!/org/antlr/v4/runtime/tree/TerminalNode.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLang.g4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="160" column="10" lean-forward="true" selection-start-line="160" selection-start-column="10" selection-end-line="160" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TmpClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1078#1079#0" expanded="true" />
-            <element signature="e#1113#1114#0" expanded="true" />
-            <element signature="e#15981#15982#0" expanded="true" />
-            <element signature="e#18180#18181#0" expanded="true" />
-            <element signature="e#18290#18291#0" expanded="true" />
-            <element signature="e#18397#18398#0" expanded="true" />
-            <element signature="e#18503#18504#0" expanded="true" />
-            <element signature="e#18585#18586#0" expanded="true" />
-            <element signature="e#18680#18681#0" expanded="true" />
-            <element signature="e#18881#18882#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#654#655#0" expanded="true" />
+            <element signature="e#729#730#0" expanded="true" />
+            <element signature="e#765#766#0" expanded="true" />
+            <element signature="e#839#840#0" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#961#962#0" expanded="true" />
+            <element signature="e#1003#1004#0" expanded="true" />
+            <element signature="e#1089#1090#0" expanded="true" />
+            <element signature="e#1130#1131#0" expanded="true" />
+            <element signature="e#1225#1226#0" expanded="true" />
+            <element signature="e#1271#1272#0" expanded="true" />
+            <element signature="e#1365#1366#0" expanded="true" />
+            <element signature="e#1410#1411#0" expanded="true" />
+            <element signature="e#1801#1802#0" expanded="true" />
+            <element signature="e#1847#1848#0" expanded="true" />
+            <element signature="e#2142#2143#0" expanded="true" />
+            <element signature="e#2186#2187#0" expanded="true" />
+            <element signature="e#2175#2176#0" expanded="true" />
+            <element signature="e#2214#2215#0" expanded="true" />
+            <element signature="e#2399#2400#0" expanded="true" />
+            <element signature="e#2434#2435#0" expanded="true" />
+            <element signature="e#3791#3792#0" expanded="true" />
+            <element signature="e#3932#3933#0" expanded="true" />
+            <element signature="e#4071#4072#0" expanded="true" />
+            <element signature="e#4209#4210#0" expanded="true" />
+            <element signature="e#4345#4346#0" expanded="true" />
+            <element signature="e#4462#4463#0" expanded="true" />
+            <element signature="e#4577#4578#0" expanded="true" />
+            <element signature="e#4697#4698#0" expanded="true" />
+            <element signature="e#4815#4816#0" expanded="true" />
+            <element signature="e#4938#4939#0" expanded="true" />
+            <element signature="e#5059#5060#0" expanded="true" />
+            <element signature="e#5194#5195#0" expanded="true" />
+            <element signature="e#5327#5328#0" expanded="true" />
+            <element signature="e#5447#5448#0" expanded="true" />
+            <element signature="e#5565#5566#0" expanded="true" />
+            <element signature="e#5700#5701#0" expanded="true" />
+            <element signature="e#5833#5834#0" expanded="true" />
+            <element signature="e#5980#5981#0" expanded="true" />
+            <element signature="e#6125#6126#0" expanded="true" />
+            <element signature="e#6423#6424#0" expanded="true" />
+            <element signature="e#6570#6571#0" expanded="true" />
+            <element signature="e#6715#6716#0" expanded="true" />
+            <element signature="e#6844#6845#0" expanded="true" />
+            <element signature="e#6971#6972#0" expanded="true" />
+            <element signature="e#7094#7095#0" expanded="true" />
+            <element signature="e#7215#7216#0" expanded="true" />
+            <element signature="e#7335#7336#0" expanded="true" />
+            <element signature="e#7453#7454#0" expanded="true" />
+            <element signature="e#7752#7753#0" expanded="true" />
+            <element signature="e#8218#8219#0" expanded="true" />
+            <element signature="e#8360#8361#0" expanded="true" />
+            <element signature="e#8472#8473#0" expanded="true" />
+            <element signature="e#8582#8583#0" expanded="true" />
+            <element signature="e#11225#11226#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -691,66 +510,9 @@
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ArtifactsStructureConfigurable.UI">
+      <state key="ProjectJDKs.UI">
         <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>kompilatory-projekt</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.37241378" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

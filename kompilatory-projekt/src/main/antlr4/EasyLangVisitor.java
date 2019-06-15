@@ -160,40 +160,11 @@ public interface EasyLangVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitLogicId(EasyLangParser.LogicIdContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code numericAtomExp}
-	 * labeled alternative in {@link EasyLangParser#arithmeticExpression}.
+	 * Visit a parse tree produced by {@link EasyLangParser#arithmeticExpression}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitNumericAtomExp(EasyLangParser.NumericAtomExpContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code mulDivExp}
-	 * labeled alternative in {@link EasyLangParser#arithmeticExpression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitMulDivExp(EasyLangParser.MulDivExpContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code parenthesisExp}
-	 * labeled alternative in {@link EasyLangParser#arithmeticExpression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitParenthesisExp(EasyLangParser.ParenthesisExpContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code idAtomExp}
-	 * labeled alternative in {@link EasyLangParser#arithmeticExpression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitIdAtomExp(EasyLangParser.IdAtomExpContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code addSubExp}
-	 * labeled alternative in {@link EasyLangParser#arithmeticExpression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitAddSubExp(EasyLangParser.AddSubExpContext ctx);
+	T visitArithmeticExpression(EasyLangParser.ArithmeticExpressionContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link EasyLangParser#compareExpression}.
 	 * @param ctx the parse tree
