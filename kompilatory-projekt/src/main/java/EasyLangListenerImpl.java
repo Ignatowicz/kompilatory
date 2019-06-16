@@ -398,6 +398,9 @@ public class EasyLangListenerImpl extends EasyLangBaseListener {
         ){
             finalCode += node.getSymbol().getText();
         }
+        if(node.getSymbol().getType() == EasyLangParser.T_COMMENT){
+            finalCode += "//" + node.getSymbol().getText().substring(1,node.getSymbol().getText().length() - 1) + "\n";
+        }
     }
 
     @Override
