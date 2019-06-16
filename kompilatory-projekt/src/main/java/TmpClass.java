@@ -22,12 +22,13 @@ public class TmpClass extends EasyLangBaseListener {
     @Override
     public void enterStart(EasyLangParser.StartContext ctx) {
         super.enterStart(ctx);
-
+        finalCode += "public class Main {\n";
     }
 
     @Override
     public void exitStart(EasyLangParser.StartContext ctx) {
         super.exitStart(ctx);
+        finalCode += "}\n";
     }
 
     @Override
@@ -85,14 +86,12 @@ public class TmpClass extends EasyLangBaseListener {
     @Override
     public void enterStartFunction(EasyLangParser.StartFunctionContext ctx) {
         super.enterStartFunction(ctx);
-        finalCode += "public class Main {\n";
         finalCode += "public static void main(String[] argv)\n";
     }
 
     @Override
     public void exitStartFunction(EasyLangParser.StartFunctionContext ctx) {
         super.exitStartFunction(ctx);
-        finalCode += "}\n";
     }
 
     @Override

@@ -1,74 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddc4ff2f-14a0-4878-a046-c584a2682601" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/TmpClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kompilatory-projekt.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLang.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLang.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLang.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLang.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLang.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLang.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLangBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLangBaseListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLangBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLangBaseVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLangLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLangLexer.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLangLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLangLexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLangLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLangLexer.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLangListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLangListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLangParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLangParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/antlr4/EasyLangVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/EasyLangVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EasyLang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EasyLang.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EasyLangListenerImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLang.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLang.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLang.g4" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLang.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLang.interp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLang.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLang.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLang.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangBaseListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangBaseVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangBaseVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangLexer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangLexer.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangLexer.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangListenerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangListenerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$AddSubExpContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$ArgListContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$ArgListContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$ArithmeticExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$ArithmeticExpressionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$Bool_valContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$Bool_valContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$CodeContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$CodeContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$CompareExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$CompareExpressionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$ConditionalExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$ConditionalExpressionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$ExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$ExpressionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$FactorContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$FactorContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$FlowExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$FlowExpressionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$FunctionCallContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$FunctionCallContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$FunctionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$FunctionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$IdAtomExpContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$LogicAndOrContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$LogicAndOrContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$LogicCompareExprContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$LogicCompareExprContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$LogicFunctionCallContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$LogicFunctionCallContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$LogicIdContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$LogicIdContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$LogicNotContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$LogicNotContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$LogicParenthesisContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$LogicParenthesisContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$LogicalExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$LogicalExpressionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$MulDivExpContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$NumericAtomExpContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$ParenthesisExpContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$PrintExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$PrintExpressionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$ProgramContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$ProgramContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$ReturnnContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$ReturnnContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$StartContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$StartContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$StartFunctionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$StartFunctionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$TypeContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$TypeContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$TypedArgListContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$TypedArgListContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$UntilExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$UntilExpressionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$ValueContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$ValueContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$VarDeclarationContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$VarDeclarationContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser$VarExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser$VarExpressionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangVisitor.class" afterDir="false" />
-    </list>
+    <list default="true" id="ddc4ff2f-14a0-4878-a046-c584a2682601" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,19 +33,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/test_grammar.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+            <state relative-caret-position="390">
+              <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/TmpClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
+            <state relative-caret-position="213">
               <caret line="94" column="27" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -301,6 +234,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560634653525" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -343,12 +277,20 @@
       <updated>1560618923898</updated>
       <workItem from="1560618925399" duration="1689000" />
       <workItem from="1560623011618" duration="5884000" />
-      <workItem from="1560669731176" duration="1367000" />
+      <workItem from="1560669731176" duration="1612000" />
     </task>
+    <task id="LOCAL-00001" summary="merge">
+      <created>1560671214925</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1560671214925</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8940000" />
+    <option name="totallyTimeSpent" value="9185000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1166" extended-state="6" />
@@ -363,7 +305,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39805827" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39805827" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39956802" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -389,6 +331,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar!/org/antlr/v4/runtime/Token.class">
@@ -433,16 +379,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/test_grammar.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TmpClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
+        <state relative-caret-position="213">
           <caret line="94" column="27" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -517,6 +456,13 @@
             <element signature="e#11183#11184#0" expanded="true" />
             <element signature="e#11225#11226#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/test_grammar.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
         </state>
       </provider>
     </entry>
