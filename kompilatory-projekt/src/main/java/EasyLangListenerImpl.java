@@ -184,6 +184,8 @@ public class EasyLangListenerImpl extends EasyLangBaseListener {
     @Override
     public void enterReturnn(EasyLangParser.ReturnnContext ctx) {
         super.enterReturnn(ctx);
+        addIndent();
+        finalCode += "return ";
     }
 
     @Override
@@ -318,6 +320,8 @@ public class EasyLangListenerImpl extends EasyLangBaseListener {
     @Override
     public void enterUntilExpression(EasyLangParser.UntilExpressionContext ctx) {
         super.enterUntilExpression(ctx);
+        indent++;
+        finalCode += "while ";
     }
 
     @Override
@@ -338,6 +342,7 @@ public class EasyLangListenerImpl extends EasyLangBaseListener {
     @Override
     public void visitTerminal(TerminalNode node) {
         super.visitTerminal(node);
+
         if(node.getSymbol().getType() == EasyLangParser.T_ID
                 || node.getSymbol().getType() == EasyLangParser.T_LBRACKET
                 || node.getSymbol().getType() == EasyLangParser.T_RBRACKET
@@ -347,46 +352,47 @@ public class EasyLangListenerImpl extends EasyLangBaseListener {
                 || node.getSymbol().getType() == EasyLangParser.T_SLASH
                 || node.getSymbol().getType() == EasyLangParser.T_PLUS
                 || node.getSymbol().getType() == EasyLangParser.T_MINUS) {
-            finalCode += node.getSymbol().getText();        }
+            finalCode += node.getSymbol().getText(); }
+
         if(node.getSymbol().getType() == EasyLangParser.T_END_LINE){
             finalCode += ";\n";
         }
+
         if(node.getSymbol().getType() == EasyLangParser.T_LCURLYBRACKET){
             finalCode += "{\n";
         }
+
         if(node.getSymbol().getType() == EasyLangParser.T_RCURLYBRACKET){
             indent--;
             addIndent();
             finalCode += "}\n";
         }
-        if(node.getSymbol().getType() == EasyLangParser.T_RETURN){
-            addIndent();
-            finalCode += "return ";
-        }
+
         if(node.getSymbol().getType() == EasyLangParser.T_IF_CLAUSE){
             if(finalCode.endsWith("else ")){
                 indent--;
             }
             finalCode += "if ";
         }
+
         if(node.getSymbol().getType() == EasyLangParser.T_ELSE_CLAUSE){
             addIndent();
             indent++;
             finalCode += "else ";
         }
+
         if(node.getSymbol().getType() == EasyLangParser.T_NOT){
             finalCode += "! ";
         }
-        if(node.getSymbol().getType() == EasyLangParser.T_UNTIL_CLAUSE){
-            indent++;
-            finalCode += "while ";
-        }
+
         if(node.getSymbol().getType() == EasyLangParser.T_OR){
             finalCode += " || ";
         }
+
         if(node.getSymbol().getType() == EasyLangParser.T_AND){
             finalCode += " && ";
         }
+
         if(node.getSymbol().getType() == EasyLangParser.T_EQ ||
                 node.getSymbol().getType() == EasyLangParser.T_LEQ ||
                 node.getSymbol().getType() == EasyLangParser.T_GEQ ||
@@ -398,6 +404,7 @@ public class EasyLangListenerImpl extends EasyLangBaseListener {
         ){
             finalCode += node.getSymbol().getText();
         }
+        
         if(node.getSymbol().getType() == EasyLangParser.T_COMMENT){
             finalCode += "//" + node.getSymbol().getText().substring(1,node.getSymbol().getText().length() - 1) + "\n";
         }
