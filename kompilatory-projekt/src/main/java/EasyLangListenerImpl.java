@@ -308,24 +308,7 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
 //        ifEnterMulDiv(ctx);
 //    }
 
-    private void ifEnterMulDiv(EasyLangParser.MulDivExpContext ctx) {
-        String left = ctx.arithmeticExpression(0).getText();
-        String right = ctx.arithmeticExpression(1).getText();
 
-        if (ctx.arithmeticExpression(0).getChildCount() == 1 && ctx.arithmeticExpression(1).getChildCount() == 1) {
-            if (ctx.T_ASTERISK() != null)
-                finalCode += left + " * " + right;
-            else if (ctx.T_SLASH() != null)
-                finalCode += left + " / " + right;
-        }
-
-        if (ctx.arithmeticExpression(0).getChildCount() == 1 && ctx.arithmeticExpression(1).getChildCount() != 1) {
-            if (ctx.T_ASTERISK() != null)
-                finalCode += left + " * ";
-            else if (ctx.T_SLASH() != null)
-                finalCode += left + " / ";
-        }
-    }
 
 //    @Override
 //    public void exitMulDivExp(EasyLangParser.MulDivExpContext ctx) {
@@ -334,17 +317,6 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
 //        ifExitMulDiv(ctx);
 //    }
 
-    private void ifExitMulDiv(EasyLangParser.MulDivExpContext ctx) {
-        String left = ctx.arithmeticExpression(0).getText();
-        String right = ctx.arithmeticExpression(1).getText();
-
-        if (ctx.arithmeticExpression(0).getChildCount() != 1 && ctx.arithmeticExpression(1).getChildCount() == 1) {
-            if (ctx.T_ASTERISK() != null)
-                finalCode += " * " + right;
-            else if (ctx.T_SLASH() != null)
-                finalCode += " / " + right;
-        }
-    }
 
 //    @Override
 //    public void enterAddSubExp(EasyLangParser.AddSubExpContext ctx) {
@@ -353,25 +325,7 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
 //        ifEnterAddSub(ctx);
 //    }
 
-    private void ifEnterAddSub(EasyLangParser.AddSubExpContext ctx) {
-        String left = ctx.arithmeticExpression(0).getText();
-        String right = ctx.arithmeticExpression(1).getText();
 
-
-        if (ctx.arithmeticExpression(0).getChildCount() == 1 && ctx.arithmeticExpression(1).getChildCount() == 1) {
-            if (ctx.T_PLUS() != null)
-                finalCode += left + " + " + right;
-            else if (ctx.T_MINUS() != null)
-                finalCode += left + " - " + right;
-        }
-
-        if (ctx.arithmeticExpression(0).getChildCount() == 1 && ctx.arithmeticExpression(1).getChildCount() != 1) {
-            if (ctx.T_PLUS() != null)
-                finalCode += left + " + ";
-            else if (ctx.T_MINUS() != null)
-                finalCode += left + " - ";
-        }
-    }
 
 //    @Override
 //    public void exitAddSubExp(EasyLangParser.AddSubExpContext ctx) {
@@ -380,16 +334,7 @@ public class EasyLangListenerImpl extends EasyLangBaseListenerExt {
 //        ifExitAddSub(ctx);
 //    }
 
-    private void ifExitAddSub(EasyLangParser.AddSubExpContext ctx) {
-        String right = ctx.arithmeticExpression(1).getText();
 
-        if (ctx.arithmeticExpression(0).getChildCount() != 1 && ctx.arithmeticExpression(1).getChildCount() == 1) {
-            if (ctx.T_PLUS() != null)
-                finalCode += " + " + right;
-            else if (ctx.T_MINUS() != null)
-                finalCode += " - " + right;
-        }
-    }
 
     //TODO: done
 //    @Override
