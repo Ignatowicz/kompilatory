@@ -1,0 +1,33 @@
+public class Main {
+	int dodawanie(int x,int y){
+		int a=(x+y);
+		return a;
+	}
+	public static void main(String[] argv){
+		System.out.println(5);
+		x=zmiennanasza;
+		boolean a=true;
+		boolean b=false;
+		c=a5+b*(d-3)/1;
+		String cos="coscosik";
+		if (! jestem){
+			System.out.println("nie ma mnie");
+		}
+		dodawanie(9);
+		while (2!=3 && 2>4){
+			System.out.println("dziala");
+			if (x){
+				dodawanie(2,3);
+			}
+			else if (1<=2){
+				System.out.println(5);
+				while (4>5){
+					dodawanie(4,5,1);
+				}
+			}
+			else {
+				System.out.println("nie dziala");
+			}
+		}
+	}
+}

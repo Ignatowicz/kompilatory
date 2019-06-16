@@ -1,0 +1,32 @@
+funkcja calkowity dodawanie(calkowity x, calkowity y) {
+calkowity a = (x + y).
+zwróć a.
+}
+start () {
+wypisz(5).
+x = zmiennanasza.
+logiczny a = prawda.
+                            logiczny b = fałsz.
+                            c = a5 + b * (d - 3) / 1.
+
+                           napis cos = "coscosik".
+
+                           jezeli (nie jestem) {
+                               wypisz("nie ma mnie").
+                          }
+                           dodawanie(9).
+                       dopoki(2 != 3 oraz 2 > 4) {
+                       wypisz("dziala").
+
+           jezeli (x) {
+         dodawanie(2, 3).
+             } inaczej jezeli (1 <= 2) {
+     wypisz(5).
+        dopoki(4 > 5) {
+        dodawanie(4, 5, 1).
+     }
+          } inaczej {
+                   wypisz("nie dziala").
+                  }
+                 }
+                        }
