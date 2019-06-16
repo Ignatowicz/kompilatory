@@ -6,7 +6,6 @@ grammar EasyLang;
 
 T_END_LINE          : ('.');
 T_INTEGER           : ('calkowity'|'całkowity');
-
 T_STRING            : ('napis');
 T_BOOL              : ('logiczny');
 T_IF_CLAUSE         : ('jeżeli'|'jezeli');
@@ -26,6 +25,11 @@ T_L                 : '<';
 T_G                 : '>';
 T_NEQ               : '!=';
 T_EQ                : '==';
+T_LBRACKET          : '(';
+T_RBRACKET          : ')';
+T_LCURLYBRACKET     : '{';
+T_RCURLYBRACKET     : '}';
+T_EQUALS            : '=';
 T_FUNCTION          : ('funkcja');
 T_RETURN            : ('zwróć'|'zwroc');
 T_PRINT             : ('wypisz');
@@ -36,14 +40,7 @@ T_BOOL_TRUE         : ( 'prawda');
 T_BOOL_FALSE        : ('fałsz' | 'falsz');
 T_STRING_VAL        : '"'[a-zA-Z_ąćęłńóśźż0-9 \t\n;]+'"';
 T_ID                : [a-zA-Z_ąćęłńóśźż][a-zA-Z0-9_ąćęłńóśźż]*;
-T_LBRACKET       : '(';
-T_RBRACKET       : ')';
-T_LCURLYBRACKET  : '{';
-T_RCURLYBRACKET  : '}';
-T_EQUALS         : '=';
-
 T_WHITESPACE        : (' ' | '\t' | '\n') -> skip ;
-
 
 
 /*

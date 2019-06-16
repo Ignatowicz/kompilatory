@@ -6,7 +6,6 @@ grammar EasyLang;
 
 T_END_LINE          : ('.');
 T_INTEGER           : ('calkowity'|'całkowity');
-
 T_STRING            : ('napis');
 T_BOOL              : ('logiczny');
 T_IF_CLAUSE         : ('jeżeli'|'jezeli');
@@ -26,6 +25,11 @@ T_L                 : '<';
 T_G                 : '>';
 T_NEQ               : '!=';
 T_EQ                : '==';
+T_LBRACKET          : '(';
+T_RBRACKET          : ')';
+T_LCURLYBRACKET     : '{';
+T_RCURLYBRACKET     : '}';
+T_EQUALS            : '=';
 T_FUNCTION          : ('funkcja');
 T_RETURN            : ('zwróć'|'zwroc');
 T_PRINT             : ('wypisz');
@@ -36,9 +40,7 @@ T_BOOL_TRUE         : ( 'prawda');
 T_BOOL_FALSE        : ('fałsz' | 'falsz');
 T_STRING_VAL        : '"'[a-zA-Z_ąćęłńóśźż0-9 \t\n;]+'"';
 T_ID                : [a-zA-Z_ąćęłńóśźż][a-zA-Z0-9_ąćęłńóśźż]*;
-
 T_WHITESPACE        : (' ' | '\t' | '\n') -> skip ;
-
 
 
 /*
@@ -76,12 +78,12 @@ flowExpression :
     ;
 
 printExpression :
-    T_PRINT '(' value ')'
-    | T_PRINT '(' T_ID ')'
+    T_PRINT T_LBRACKET value T_RBRACKET
+    | T_PRINT T_LBRACKET T_ID T_RBRACKET
     ;
 
 startFunction :
-    T_START '()' '{' code '}'
+    T_START '()' T_LCURLYBRACKET code T_RCURLYBRACKET
     ;
 
 bool_val :
@@ -102,12 +104,12 @@ value :
     ;
 
 varDeclaration :
-    type T_ID '=' factor
+    type T_ID T_EQUALS factor
     | type T_ID
     ;
 
 varExpression :
-    T_ID '=' factor
+    T_ID T_EQUALS factor
     ;
 
 factor :
@@ -122,7 +124,7 @@ returnn :
     ;
 
 function :
-    T_FUNCTION type T_ID '(' typedArgList ')' '{' code returnn '}'
+    T_FUNCTION type T_ID T_LBRACKET typedArgList T_RBRACKET T_LCURLYBRACKET code returnn T_RCURLYBRACKET
     ;
 
 typedArgList :
@@ -136,7 +138,7 @@ argList :
     ;
 
 functionCall :
-    T_ID '(' argList ')'
+    T_ID T_LBRACKET argList T_RBRACKET
     ;
 
 logicalExpression :
@@ -149,11 +151,11 @@ logicalExpression :
     ;
 
 arithmeticExpression :
-    '(' arithmeticExpression ')'                                            # parenthesisExp
-    | arithmeticExpression (T_ASTERISK|T_SLASH) arithmeticExpression        # mulDivExp
-    | arithmeticExpression (T_PLUS|T_MINUS) arithmeticExpression            # addSubExp
-    | T_INTEGER_VAL                                                         # numericAtomExp
-    | T_ID                                                                  # idAtomExp
+    T_LBRACKET arithmeticExpression T_RBRACKET
+    | arithmeticExpression (T_ASTERISK|T_SLASH) arithmeticExpression
+    | arithmeticExpression (T_PLUS|T_MINUS) arithmeticExpression
+    | T_INTEGER_VAL
+    | T_ID
     ;
 
 compareExpression :

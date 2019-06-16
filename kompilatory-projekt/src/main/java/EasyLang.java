@@ -52,7 +52,7 @@ public class EasyLang {
         ParseTree tree = easyLangParser.start();
         ParseTreeWalker walker = new ParseTreeWalker();
 
-        TmpClass listener = new TmpClass();
+        EasyLangListenerImpl listener = new EasyLangListenerImpl();
 
         walker.walk(listener, tree);
 
