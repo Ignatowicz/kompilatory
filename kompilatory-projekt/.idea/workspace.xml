@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="84abbaaa-ff1c-4c28-9a46-1881a97e8e8d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EasyLangListenerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EasyLangListenerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EasyLangListenerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EasyLangListenerImpl.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLang.g4">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="167" column="23" lean-forward="true" selection-start-line="167" selection-start-column="23" selection-end-line="167" selection-end-column="23" />
+            <state relative-caret-position="2505">
+              <caret line="167" column="23" selection-start-line="167" selection-start-column="23" selection-end-line="167" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -34,19 +32,25 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/EasyLangListenerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="626" lean-forward="true" selection-start-line="626" selection-end-line="626" />
+            <state relative-caret-position="314">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1078#1079#0" expanded="true" />
-                <element signature="e#1113#1114#0" expanded="true" />
+                <element signature="e#15940#15941#0" expanded="true" />
                 <element signature="e#15981#15982#0" expanded="true" />
+                <element signature="e#18139#18140#0" expanded="true" />
                 <element signature="e#18180#18181#0" expanded="true" />
+                <element signature="e#18250#18251#0" expanded="true" />
                 <element signature="e#18290#18291#0" expanded="true" />
+                <element signature="e#18356#18357#0" expanded="true" />
                 <element signature="e#18397#18398#0" expanded="true" />
+                <element signature="e#18461#18462#0" expanded="true" />
                 <element signature="e#18503#18504#0" expanded="true" />
+                <element signature="e#18546#18547#0" expanded="true" />
                 <element signature="e#18585#18586#0" expanded="true" />
+                <element signature="e#18640#18641#0" expanded="true" />
                 <element signature="e#18680#18681#0" expanded="true" />
+                <element signature="e#18842#18843#0" expanded="true" />
                 <element signature="e#18881#18882#0" expanded="true" />
               </folding>
             </state>
@@ -57,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/test_grammar.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -65,7 +69,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/EasyLang.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="633">
+            <state relative-caret-position="645">
               <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -171,9 +175,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="564" />
-    <option name="width" value="1356" />
-    <option name="height" value="530" />
+    <option name="width" value="1920" />
+    <option name="height" value="1166" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -181,6 +184,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -230,8 +235,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -307,7 +310,9 @@
       <workItem from="1560290809067" duration="6675000" />
       <workItem from="1560299532924" duration="4422000" />
       <workItem from="1560331110763" duration="2325000" />
-      <workItem from="1560349759677" duration="16123000" />
+      <workItem from="1560349759677" duration="16171000" />
+      <workItem from="1560367245775" duration="49000" />
+      <workItem from="1560669318188" duration="305000" />
     </task>
     <task id="LOCAL-00001" summary="chat grammar">
       <created>1560020492668</created>
@@ -400,16 +405,23 @@
       <option name="project" value="LOCAL" />
       <updated>1560365615056</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="logical expressions - done">
+      <created>1560366993080</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1560366993080</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77690000" />
+    <option name="totallyTimeSpent" value="78092000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1166" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49902913" visible="true" weight="0.1755603" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49902913" visible="true" weight="0.17982924" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -420,7 +432,7 @@
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32718447" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3291262" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.26407766" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.26407766" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -644,16 +656,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLang.g4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2505">
+          <caret line="167" column="23" selection-start-line="167" selection-start-column="23" selection-end-line="167" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/test_grammar.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/EasyLang.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
+        <state relative-caret-position="645">
           <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -661,28 +680,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/antlr4/EasyLang.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="167" column="23" lean-forward="true" selection-start-line="167" selection-start-column="23" selection-end-line="167" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/EasyLangListenerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="626" lean-forward="true" selection-start-line="626" selection-end-line="626" />
+        <state relative-caret-position="314">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1078#1079#0" expanded="true" />
-            <element signature="e#1113#1114#0" expanded="true" />
+            <element signature="e#15940#15941#0" expanded="true" />
             <element signature="e#15981#15982#0" expanded="true" />
+            <element signature="e#18139#18140#0" expanded="true" />
             <element signature="e#18180#18181#0" expanded="true" />
+            <element signature="e#18250#18251#0" expanded="true" />
             <element signature="e#18290#18291#0" expanded="true" />
+            <element signature="e#18356#18357#0" expanded="true" />
             <element signature="e#18397#18398#0" expanded="true" />
+            <element signature="e#18461#18462#0" expanded="true" />
             <element signature="e#18503#18504#0" expanded="true" />
+            <element signature="e#18546#18547#0" expanded="true" />
             <element signature="e#18585#18586#0" expanded="true" />
+            <element signature="e#18640#18641#0" expanded="true" />
             <element signature="e#18680#18681#0" expanded="true" />
+            <element signature="e#18842#18843#0" expanded="true" />
             <element signature="e#18881#18882#0" expanded="true" />
           </folding>
         </state>
